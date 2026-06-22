@@ -76,36 +76,6 @@ function parliamentSeats(n, rows, r0, r1) {
   return pts;
 }
 
-export function scatter(el, stations, winnerKey = "civil_contract") {
-  const W = 520, H = 360, m = { l: 46, r: 16, t: 16, b: 40 };
-  const data = stations.filter((s) => s.registered > 0 && s.valid > 0).map((s) => ({
-    turnout: s.turnout_pct ?? (100 * s.ballots_cast) / s.registered,
-    share: (100 * (s[winnerKey] || 0)) / s.valid,
-    name: s.station,
-  }));
-  const x = d3.scaleLinear().domain([0, 100]).range([m.l, W - m.r]);
-  const y = d3.scaleLinear().domain([0, 100]).range([H - m.b, m.t]);
-  const svg = d3.select(el).html("").append("svg").attr("viewBox", `0 0 ${W} ${H}`);
-  axes(svg, x, y, W, H, m, t("forensics_x"), t("forensics_y"));
-  svg.append("g").selectAll("circle").data(data).join("circle")
-    .attr("cx", (d) => x(d.turnout)).attr("cy", (d) => y(d.share)).attr("r", 2.1)
-    .attr("fill", "#F2A900").attr("opacity", .35);
-}
-
-export function histogram(el, stations) {
-  const W = 520, H = 360, m = { l: 46, r: 16, t: 16, b: 40 };
-  const vals = stations.map((s) => s.turnout_pct ?? (100 * s.ballots_cast) / s.registered).filter((v) => v > 0 && v <= 100);
-  const x = d3.scaleLinear().domain([20, 100]).range([m.l, W - m.r]);
-  const bins = d3.bin().domain(x.domain()).thresholds(32)(vals);
-  const y = d3.scaleLinear().domain([0, d3.max(bins, (b) => b.length)]).range([H - m.b, m.t]);
-  const svg = d3.select(el).html("").append("svg").attr("viewBox", `0 0 ${W} ${H}`);
-  axes(svg, x, y, W, H, m, t("forensics_x"), t("forensics_count"));
-  svg.append("g").selectAll("rect").data(bins).join("rect")
-    .attr("x", (b) => x(b.x0) + 1).attr("width", (b) => Math.max(0, x(b.x1) - x(b.x0) - 1.5))
-    .attr("y", H - m.b).attr("height", 0).attr("fill", "#0F8B8D").attr("rx", 2)
-    .transition().duration(600).attr("y", (b) => y(b.length)).attr("height", (b) => H - m.b - y(b.length));
-}
-
 export function miniMap(el, geo, marz, parties, pid) {
   const partyById = Object.fromEntries(parties.map((p) => [p.id, p]));
   const col = partyById[pid]?.color || "#888";
@@ -175,44 +145,6 @@ export function communityMap({ el, geo, communities, parties, lang, marzNameFn }
   };
 }
 
-export function correlationScatter(el, points, xKey, yKey, labels) {
-  const W = 760, H = 420, m = { l: 60, r: 24, t: 16, b: 48 };
-  const x = d3.scaleLinear().domain(d3.extent(points, (p) => p[xKey])).nice().range([m.l, W - m.r]);
-  const y = d3.scaleLinear().domain(d3.extent(points, (p) => p[yKey])).nice().range([H - m.b, m.t]);
-  const svg = d3.select(el).html("").append("svg").attr("viewBox", `0 0 ${W} ${H}`);
-  axes(svg, x, y, W, H, m, labels.x, labels.y);
-
-  // linear trend line
-  const reg = linreg(points.map((p) => [p[xKey], p[yKey]]));
-  if (reg) {
-    const xd = x.domain();
-    svg.append("line").attr("x1", x(xd[0])).attr("y1", y(reg.a + reg.b * xd[0]))
-      .attr("x2", x(xd[1])).attr("y2", y(reg.a + reg.b * xd[1]))
-      .attr("stroke", "var(--muted)").attr("stroke-dasharray", "5 4").attr("opacity", .6);
-    svg.append("text").attr("x", W - m.r).attr("y", m.t + 12).attr("text-anchor", "end")
-      .attr("fill", "var(--muted)").attr("font-size", 11).text(`r = ${reg.r.toFixed(2)}`);
-  }
-  const gp = svg.append("g").selectAll("g").data(points).join("g");
-  gp.append("circle").attr("cx", (p) => x(p[xKey])).attr("cy", (p) => y(p[yKey]))
-    .attr("r", 6).attr("fill", (p) => p.color).attr("class", "dot-pt")
-    .attr("opacity", 0).transition().duration(500).delay((p, i) => i * 25).attr("opacity", 1);
-  gp.append("text").attr("class", "dot-label")
-    .attr("text-anchor", (p) => (x(p[xKey]) > W - 90 ? "end" : "start"))
-    .attr("x", (p) => x(p[xKey]) + (x(p[xKey]) > W - 90 ? -9 : 9))
-    .attr("y", (p) => y(p[yKey]) + 3).text((p) => p.name);
-}
-
-function linreg(pts) {
-  const n = pts.length; if (n < 3) return null;
-  const sx = d3.sum(pts, (d) => d[0]), sy = d3.sum(pts, (d) => d[1]);
-  const sxx = d3.sum(pts, (d) => d[0] * d[0]), syy = d3.sum(pts, (d) => d[1] * d[1]);
-  const sxy = d3.sum(pts, (d) => d[0] * d[1]);
-  const b = (n * sxy - sx * sy) / (n * sxx - sx * sx);
-  const a = (sy - b * sx) / n;
-  const r = (n * sxy - sx * sy) / Math.sqrt((n * sxx - sx * sx) * (n * syy - sy * sy));
-  return { a, b, r };
-}
-
 function esc(s) { return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
 function ensureTooltip() {
   let el = document.querySelector(".tooltip");
@@ -220,19 +152,4 @@ function ensureTooltip() {
   return d3.select(el);
 }
 
-function axes(svg, x, y, W, H, m, xl, yl) {
-  svg.append("g").attr("transform", `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(6))
-    .call(styleAxis);
-  svg.append("g").attr("transform", `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(6))
-    .call(styleAxis);
-  svg.append("text").attr("x", (W + m.l) / 2).attr("y", H - 4).attr("text-anchor", "middle")
-    .attr("fill", "var(--muted)").attr("font-size", 11).text(xl);
-  svg.append("text").attr("transform", "rotate(-90)").attr("x", -(H - m.b) / 2).attr("y", 14)
-    .attr("text-anchor", "middle").attr("fill", "var(--muted)").attr("font-size", 11).text(yl);
-}
-function styleAxis(g) {
-  g.selectAll("text").attr("fill", "var(--muted)").attr("font-size", 10);
-  g.selectAll("line").attr("stroke", "var(--line)");
-  g.select(".domain").attr("stroke", "var(--line)");
-}
 function truncate(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }

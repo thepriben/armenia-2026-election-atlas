@@ -1,9 +1,9 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import { STRINGS, LANGS, LANG_LABEL, t, setLang, getLang, pickLangField } from "./i18n.js";
-import { loadCore, loadStations, loadCommunities } from "./data.js";
+import { loadCore, loadCommunities } from "./data.js";
 import { initState, getState, setState, onState, shareURL } from "./state.js";
 import { createMap, renderLegend } from "./map.js";
-import { voteBars, hemicycle, scatter, histogram, miniMap, communityMap, correlationScatter } from "./charts.js";
+import { voteBars, hemicycle, miniMap, communityMap } from "./charts.js";
 import { nationalTable, explorerTable } from "./table.js";
 
 const LEADER_LINK = {
@@ -13,7 +13,7 @@ const LEADER_LINK = {
   hanrapetutyun: "leader_sargsyan", wings_of_unity: "leader_tandilyan",
 };
 
-let core, mapApi, stations = null, communities = null;
+let core, mapApi, communities = null;
 const $ = (s) => document.querySelector(s);
 const fmtInt = (n) => Number(n).toLocaleString(getLang() === "hy" ? "hy-AM" : getLang());
 
@@ -40,14 +40,11 @@ async function init() {
   buildPartyChips();
   renderPartyDetail(getState().party);
   buildMapControls();
-  buildContext();
   buildDataExplorer();
   renderAbout();
   wireShare();
   wireScrollSpy();
-
-  // forensics (parquet) loaded lazily but kick it off
-  loadForensics();
+  loadRepoStars();
 
   onState((s, patch) => {
     if (patch.lang) { setLang(s.lang); applyI18n(); refreshAll(); }
@@ -105,7 +102,6 @@ function buildThemeToggle() {
     const next = document.body.dataset.theme === "dark" ? "light" : "dark";
     document.body.dataset.theme = next;
     localStorage.setItem("atlas-theme", next);
-    if (stations) { scatter($("#scatter"), stations); histogram($("#histogram"), stations); }
   });
 }
 
@@ -116,10 +112,8 @@ function refreshAll() {
   buildPartyChips();
   buildMapControls();
   buildCommunityMap();
-  buildContext();
   renderAbout();
   buildDataExplorer();
-  if (stations) { scatter($("#scatter"), stations); histogram($("#histogram"), stations); }
 }
 
 /* ---------------- hero ---------------- */
@@ -143,7 +137,6 @@ function renderStats() {
   const cc = n.parties.find((p) => p.id === "civil_contract");
   const stats = [
     { v: n.turnout_pct + "%", l: t("stat_turnout") },
-    { v: pickLangField(cc, "name"), l: t("stat_winner") },
     { v: cc.seats + " / " + n.total_seats, l: t("stat_seats") },
     { v: fmtInt(n.stations), l: t("stat_stations") },
     { v: n.parties.length, l: t("stat_forces") },
@@ -199,10 +192,6 @@ function renderPanel(iso) {
       <span class="track"><span class="fill" style="width:${Math.min(pct * 1.6, 100)}%;background:${p.color}"></span></span>
       <span class="pct">${pct.toFixed(1)}%</span></div>`;
   }).join("");
-  const ctx = core.context.marz[iso];
-  const ctxRows = ctx ? `
-    <div class="ps"><div class="v">${(ctx.wage_2025_amd / 1000).toFixed(0)}k</div><div class="l">${t("panel_wage")}</div></div>
-    <div class="ps"><div class="v">${ctx.poverty_2023_pct}%</div><div class="l">${t("panel_poverty")}</div></div>` : "";
   $("#marzPanel").innerHTML = `
     <h3 class="panel-name">${name}</h3>
     <div class="panel-stats">
@@ -210,7 +199,6 @@ function renderPanel(iso) {
       <div class="ps"><div class="v">+${m.margin}</div><div class="l">${t("panel_margin")}</div></div>
       <div class="ps"><div class="v">${fmtInt(m.registered)}</div><div class="l">${t("panel_registered")}</div></div>
       <div class="ps"><div class="v">${fmtInt(m.stations)}</div><div class="l">${t("panel_stations")}</div></div>
-      ${ctxRows}
     </div>
     <div>${rows}</div>
     ${link ? `<div class="reflinks"><a href="${link.url}" target="_blank" rel="noopener">${t("panel_more")} ↗</a></div>` : ""}`;
@@ -234,56 +222,16 @@ function buildCommunityMap() {
   $("#communityHint").textContent = `${t("explore_hint")} · ${core.comCoverage.located}/${core.comCoverage.total} ${t("explore_coverage")}`;
 }
 
-/* ---------------- context / correlations ---------------- */
-function buildContext() {
-  const inds = core.context.indicators;
-  const xOpts = Object.keys(inds).map((k) =>
-    `<option value="ind:${k}">${langPick(inds[k])}</option>`).join("")
-    + `<option value="metric:turnout">${t("m_turnout")}</option>`;
-  const yOpts = [
-    ["metric:margin", t("m_margin")], ["metric:turnout", t("m_turnout")],
-    ["metric:cc", t("m_cc")], ["metric:opp", t("m_opp")],
-  ].map(([v, l]) => `<option value="${v}">${l}</option>`).join("");
-  $("#ctxX").innerHTML = xOpts;
-  $("#ctxY").innerHTML = yOpts;
-  $("#ctxX").value = "ind:poverty_2023_pct";
-  $("#ctxY").value = "metric:margin";
-  $("#ctxX").onchange = drawContext;
-  $("#ctxY").onchange = drawContext;
-  $("#ctxSource").textContent = t("ctx_source") + " · " + core.context._source;
-  drawContext();
-}
-
-function langPick(obj) { return obj[getLang()] || obj.en; }
-
-function indicatorLabel(spec) {
-  const inds = core.context.indicators;
-  if (spec.startsWith("ind:")) return langPick(inds[spec.slice(4)]);
-  const k = spec.split(":")[1];
-  return { turnout: t("m_turnout"), margin: t("m_margin"), cc: t("m_cc"), opp: t("m_opp") }[k];
-}
-
-function valueFor(iso, spec) {
-  const m = core.marz[iso], ctx = core.context.marz[iso];
-  if (spec.startsWith("ind:")) return ctx ? ctx[spec.slice(4)] : null;
-  const k = spec.split(":")[1];
-  if (k === "turnout") return m.turnout_pct;
-  if (k === "margin") return m.margin;
-  if (k === "cc") return m.shares.civil_contract.pct;
-  if (k === "opp") return 100 - m.shares.civil_contract.pct;
-  return null;
-}
-
-function drawContext() {
-  const xs = $("#ctxX").value, ys = $("#ctxY").value;
-  const partyById = Object.fromEntries(core.parties.map((p) => [p.id, p]));
-  const points = Object.keys(core.marz).map((iso) => ({
-    name: marzName(iso),
-    x: valueFor(iso, xs), y: valueFor(iso, ys),
-    color: partyById[core.marz[iso].winner].color,
-  })).filter((p) => p.x != null && p.y != null);
-  correlationScatter($("#ctxScatter"), points, "x", "y",
-    { x: indicatorLabel(xs), y: indicatorLabel(ys) });
+/* ---------------- repo star badge ---------------- */
+async function loadRepoStars() {
+  const el = $("#repoStars");
+  if (!el) return;
+  try {
+    const r = await fetch("https://api.github.com/repos/thepriben/armenia-2026-election-atlas");
+    if (!r.ok) return;
+    const d = await r.json();
+    el.textContent = `★ ${Number(d.stargazers_count || 0).toLocaleString(getLang())}`;
+  } catch (e) {}
 }
 
 /* ---------------- parties ---------------- */
@@ -342,14 +290,6 @@ function renderPartyDetail(pid) {
 function marzName(iso) {
   const m = core.marz[iso];
   return m ? pickLangField({ name_en: m.name_en, name_hy: m.name_hy, name_fr: m.name_fr }, "name") : iso;
-}
-
-/* ---------------- forensics ---------------- */
-async function loadForensics() {
-  $("#scatter").innerHTML = `<p class="muted small">${t("loading")}</p>`;
-  stations = await loadStations();
-  scatter($("#scatter"), stations);
-  histogram($("#histogram"), stations);
 }
 
 /* ---------------- data explorer ---------------- */

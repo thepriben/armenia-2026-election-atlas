@@ -10,7 +10,7 @@ async function getJSON(path) {
 }
 
 export async function loadCore() {
-  const [national, marz, parties, links, meta, geo, profiles, context, comGeo] = await Promise.all([
+  const [national, marz, parties, links, meta, geo, profiles, comGeo] = await Promise.all([
     getJSON("data/national.json"),
     getJSON("data/marz.json"),
     getJSON("data/parties.json"),
@@ -18,35 +18,13 @@ export async function loadCore() {
     getJSON("data/meta.json"),
     getJSON("data/armenia-marz.geojson"),
     getJSON("data/party_profiles.json"),
-    getJSON("data/marz_context.json"),
     getJSON("data/communities_geo.json"),
   ]);
   return {
     national, marz, parties, links, meta, geo,
-    profiles: profiles.profiles, context, communitiesGeo: comGeo.communities,
+    profiles: profiles.profiles, communitiesGeo: comGeo.communities,
     comCoverage: { located: comGeo.located, total: comGeo.total },
   };
-}
-
-let _stations = null;
-export async function loadStations() {
-  if (_stations) return _stations;
-  try {
-    const { asyncBufferFromUrl, parquetReadObjects } =
-      await import("https://cdn.jsdelivr.net/npm/hyparquet@1.17.1/+esm");
-    const file = await asyncBufferFromUrl({ url: base + "data/clean/stations.parquet" });
-    const rows = await parquetReadObjects({ file });
-    // hyparquet returns BigInt for int64 columns — coerce to Number for arithmetic
-    _stations = rows.map((r) => {
-      const o = {};
-      for (const k in r) o[k] = typeof r[k] === "bigint" ? Number(r[k]) : r[k];
-      return o;
-    });
-  } catch (e) {
-    console.warn("Parquet load failed, falling back to CSV:", e);
-    _stations = await loadCSV("data/clean/stations.csv");
-  }
-  return _stations;
 }
 
 async function loadCSV(path) {
