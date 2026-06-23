@@ -285,9 +285,9 @@ export function communityMap({
 
   function render() {
     const rr = currentRadius();
-    clusterG.selectAll("*").remove();
 
     if (drill) {
+      clusterG.selectAll("*").remove();
       const items = drill.items;
       layer.selectAll("circle").data(items, (c) => c.locality_hy + c.marz_iso)
         .join(
@@ -338,6 +338,7 @@ export function communityMap({
 
   render();
 
+  let renderPending = false;
   const zoom = d3.zoom().scaleExtent([1, 14]).translateExtent([[0, 0], [W, H]])
     .on("zoom", (ev) => {
       zoomK = ev.transform.k;
@@ -345,7 +346,10 @@ export function communityMap({
       hideTip();
       g.attr("transform", ev.transform);
       g.selectAll(".marz-base").attr("stroke-width", 1 / zoomK);
-      render();
+      if (!renderPending) {
+        renderPending = true;
+        requestAnimationFrame(() => { renderPending = false; render(); });
+      }
     });
   svg.call(zoom);
 
