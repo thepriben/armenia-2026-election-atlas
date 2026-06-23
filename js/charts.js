@@ -156,13 +156,19 @@ export function communityMap({
     .range([1.5, 22]);
   layoutItems(allCommunities, rComm, 12);
 
+  // Anchor each bubble to its true projected position and keep the declustering
+  // offset constant in screen pixels (instead of growing with zoom), so bubbles
+  // stay on their real spot — and inside Armenia — at every zoom level.
+  const screenX = (c) => c._x + (c.x - c._x) / zoomK;
+  const screenY = (c) => c._y + (c.y - c._y) / zoomK;
+
   function currentRadius() {
     if (drill) {
       const items = drill.items;
       const r = d3.scaleSqrt().domain([0, d3.max(items, (c) => c.registered)]).range([1.2, 14]);
-      return (c) => r(c.registered) / Math.sqrt(zoomK);
+      return (c) => r(c.registered) / zoomK;
     }
-    return (c) => rComm(c.registered) / Math.sqrt(zoomK);
+    return (c) => rComm(c.registered) / zoomK;
   }
 
   function showTip(ev, item, caption) {
@@ -269,16 +275,16 @@ export function communityMap({
         (exit) => exit.remove(),
       )
       .attr("transform", (members) => {
-        const cx = d3.mean(members, (c) => c.x);
-        const cy = d3.mean(members, (c) => c.y);
+        const cx = d3.mean(members, screenX);
+        const cy = d3.mean(members, screenY);
         return `translate(${cx},${cy})`;
       })
       .each(function (members) {
-        const rad = Math.min(22, 8 + members.length * 2.2) / Math.sqrt(zoomK);
+        const rad = Math.min(22, 8 + members.length * 2.2) / zoomK;
         d3.select(this).select(".cluster-halo").attr("r", rad + 4 / zoomK).attr("stroke-width", 1.2 / zoomK);
         d3.select(this).select(".cluster-core").attr("r", rad).attr("stroke-width", .8 / zoomK);
         d3.select(this).select(".cluster-count")
-          .attr("text-anchor", "middle").attr("dy", ".35em").attr("font-size", Math.max(10, 12 / Math.sqrt(zoomK)))
+          .attr("text-anchor", "middle").attr("dy", ".35em").attr("font-size", 12 / zoomK)
           .text(String(members.length));
       });
   }
@@ -299,7 +305,7 @@ export function communityMap({
           (update) => update,
           (exit) => exit.remove(),
         )
-        .attr("cx", (c) => c.x).attr("cy", (c) => c.y)
+        .attr("cx", screenX).attr("cy", screenY)
         .attr("r", rr).attr("stroke-width", .5 / zoomK);
       return;
     }
@@ -331,7 +337,7 @@ export function communityMap({
         (update) => update,
         (exit) => exit.remove(),
       )
-      .attr("cx", (c) => c.x).attr("cy", (c) => c.y)
+      .attr("cx", screenX).attr("cy", screenY)
       .attr("r", rr).attr("stroke-width", .5 / zoomK)
       .style("cursor", (c) => (c.settlement_count || 0) > 1 ? "pointer" : null);
   }
