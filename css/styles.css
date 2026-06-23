@@ -47,7 +47,7 @@ h1,h2,h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -.01em; 
 .topbar-main { display: flex; align-items: center; gap: 18px; }
 .brand { display: inline-flex; flex-direction: column; gap: 1px; text-decoration: none; line-height: 1.12; }
 .brand-title { font-family: var(--serif); font-weight: 900; font-size: 1.02rem; color: var(--text); white-space: nowrap; }
-.brand-sub { font-size: .68rem; font-weight: 600; letter-spacing: .03em; color: var(--muted); white-space: nowrap; }
+.brand-sub { font-size: .64rem; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); white-space: nowrap; }
 .mainnav { display: flex; gap: 4px; flex-wrap: wrap; padding-top: 8px; border-top: 1px solid var(--line); }
 .mainnav a {
   text-decoration: none; color: var(--muted); font-weight: 600; font-size: .9rem;

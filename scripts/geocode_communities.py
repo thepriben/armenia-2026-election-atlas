@@ -9,10 +9,13 @@ Columns: geonameid, name, asciiname, alternatenames, lat, lon, fclass, fcode, ..
 """
 from __future__ import annotations
 
+import collections
 import csv
 import json
+import math
 import os
 import pathlib
+import re
 import sys
 
 import pandas as pd
@@ -26,9 +29,18 @@ COMMUNITIES = DATA / "clean" / "communities.parquet"
 # feature-class preference: populated places, then admin areas
 FCLASS_RANK = {"P": 0, "A": 1, "L": 3, "T": 3, "H": 4, "S": 2, "V": 3, "R": 3}
 
+# CEC province (marz_en) -> GeoNames admin1 code. Used to disambiguate the many
+# homonymous villages (a dozen " Նոր …", "Վերին …", several "Շահումյան" etc.)
+# that otherwise collapse onto a single wrong point.
+MARZ_ADM1 = {
+    "Aragatsotn": "01", "Ararat": "02", "Armavir": "03", "Gegharkunik": "04",
+    "Kotayk": "05", "Lori": "06", "Shirak": "07", "Syunik": "08",
+    "Tavush": "09", "Vayots Dzor": "10", "Yerevan": "11",
+}
+
 
 def load_geonames():
-    """name(Armenian or latin) -> list of (rank, pop, lat, lon)."""
+    """name (Armenian or latin) -> list of (rank, -pop, lat, lon, fclass, admin1)."""
     idx = {}
     with open(GEONAMES, encoding="utf-8") as f:
         for row in csv.reader(f, delimiter="\t"):
@@ -39,12 +51,15 @@ def load_geonames():
             except ValueError:
                 continue
             fclass = row[6]
+            admin1 = row[10]
             pop = int(row[14]) if row[14].isdigit() else 0
             rank = FCLASS_RANK.get(fclass, 5)
             names = {row[1], row[2]}
             names.update(n for n in row[3].split(",") if n)
             for nm in names:
-                idx.setdefault(nm.strip(), []).append((rank, -pop, lat, lon, fclass))
+                key = normalize(nm)
+                if key:
+                    idx.setdefault(key, []).append((rank, -pop, lat, lon, fclass, admin1))
     for nm in idx:
         idx[nm].sort()
     return idx
@@ -56,9 +71,16 @@ MANUAL = {
     "Արեվուտ": (40.3253, 44.6190),     # Arevut community (Kotayk), Nor Hachn area
 }
 
+# Settlement designators appended by the CEC ("village", "town", "station").
+_DESIG = re.compile(r"\s+(գյուղ|քաղաք|կայարան|ավան\b)\s*$")
+
 
 def normalize(s: str) -> str:
-    return (s or "").strip().replace(" յ", "յ")
+    s = (s or "").strip()
+    s = re.sub(r"\s*\([^)]*\)\s*", " ", s)   # drop parenthetical qualifiers
+    s = re.sub(r"\s+", " ", s).strip()
+    s = _DESIG.sub("", s)                      # drop trailing "գյուղ"/"քաղաք"/…
+    return s.replace(" յ", "յ")
 
 
 def _variants(name):
@@ -68,20 +90,42 @@ def _variants(name):
     yield name.replace("և", "եվ")
 
 
-def match(name, idx):
+def match(name, marz_en, idx):
+    """Resolve a community to coordinates, preferring an exact name match inside
+    the community's own province; otherwise accept only a name that is unique in
+    the whole gazetteer. Never fall back to a partial/first-token guess."""
     if name in MANUAL:
         lat, lon = MANUAL[name]
         return lat, lon, "M"
+    target = MARZ_ADM1.get(marz_en)
     for v in _variants(name):
         cands = idx.get(v)
-        if cands:
-            r = cands[0]
-            return r[2], r[3], r[4]
-    for part in (name.split()[0], name.split("-")[0]):
-        c = idx.get(part)
-        if c:
-            return c[0][2], c[0][3], c[0][4]
+        if not cands:
+            continue
+        in_prov = [c for c in cands if c[5] == target]
+        if in_prov:
+            c = in_prov[0]
+            return c[2], c[3], c[4]
     return None
+
+
+def spread_overlaps(out):
+    """Village/town twins (e.g. 'Արարատ գյուղ' + 'Արարատ քաղաք') resolve to the
+    same gazetteer point. Nudge exact duplicates onto a small deterministic ring
+    (~1 km) so every bubble stays individually visible and clickable."""
+    groups = collections.defaultdict(list)
+    for c in out:
+        if c["lat"] is None:
+            continue
+        groups[(round(c["lat"], 5), round(c["lon"], 5))].append(c)
+    for (lat, lon), members in groups.items():
+        if len(members) < 2:
+            continue
+        radius = 0.012
+        for i, c in enumerate(members[1:], start=1):
+            ang = 2 * math.pi * i / len(members)
+            c["lat"] = round(lat + radius * math.cos(ang), 5)
+            c["lon"] = round(lon + radius * math.sin(ang) / math.cos(math.radians(lat)), 5)
 
 
 def main():
@@ -101,7 +145,7 @@ def main():
         valid = max(int(r["valid"]), 1)
         winner = order[0]
         top = [{"id": pid, "pct": round(100 * votes[pid] / valid, 1)} for pid in order[:3]]
-        m = match(normalize(r["community_hy"]), idx)
+        m = match(normalize(r["community_hy"]), r["marz_en"], idx)
         if m:
             matched += 1
         out.append({
@@ -119,6 +163,7 @@ def main():
             "lon": m[1] if m else None,
         })
 
+    spread_overlaps(out)
     located = [c for c in out if c["lat"] is not None]
     (DATA / "communities_geo.json").write_text(
         json.dumps({"source": "GeoNames (CC-BY) + CEC results",

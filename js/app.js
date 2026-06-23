@@ -138,11 +138,13 @@ function applyDynamicCopy() {
       .replace("{a}", n.threshold_alliance_pct);
   }
   const lang = getLang();
+  const e = electionList.find((x) => x.id === electionId);
+  const electionName = (e && e.name && (e.name[lang] || e.name.en)) || t("site_title");
   const titleEl = $("#heroTitle");
-  if (titleEl) {
-    const e = electionList.find((x) => x.id === electionId);
-    titleEl.textContent = (e && e.name && (e.name[lang] || e.name.en)) || t("site_title");
-  }
+  if (titleEl) titleEl.textContent = electionName;
+  const brandTitleEl = $("#brandTitle");
+  if (brandTitleEl) brandTitleEl.textContent = electionName;
+  document.title = `${electionName} · ${t("site_title")}`;
   const ledeEl = $("#heroLede");
   if (ledeEl) {
     const w = n.parties[0];
