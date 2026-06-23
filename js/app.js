@@ -145,6 +145,8 @@ function applyDynamicCopy() {
   const brandTitleEl = $("#brandTitle");
   if (brandTitleEl) brandTitleEl.textContent = electionName;
   document.title = `${electionName} · ${t("site_title")}`;
+  const verifyLink = document.getElementById("verifyLink");
+  if (verifyLink) verifyLink.href = `verify.html?year=${electionId}`;
   const ledeEl = $("#heroLede");
   if (ledeEl) {
     const w = n.parties[0];

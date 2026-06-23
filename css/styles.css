@@ -75,6 +75,11 @@ main { display: block; }
 .section-head { margin-bottom: 26px; }
 .section-head h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin: 0 0 8px; }
 .section-head .muted { max-width: 720px; }
+.osm-link {
+  display: inline-block; margin-top: 10px; font-size: .9rem; font-weight: 600;
+  color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent;
+}
+.osm-link:hover { border-bottom-color: var(--accent); }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
 .card {
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
