@@ -1,7 +1,7 @@
 // Trilingual UI strings. Authoritative entity names (parties, marzer, leaders)
 // come from the data files (CEC + Wikidata); these are interface labels only.
 
-export const LANGS = ["en", "hy", "fr"];
+export const LANGS = ["hy", "en", "fr"];
 export const LANG_LABEL = { en: "EN", hy: "ՀՅ", fr: "FR" };
 
 export const STRINGS = {
@@ -256,7 +256,7 @@ export const STRINGS = {
   },
 };
 
-let current = "en";
+let current = "hy";
 export function setLang(l) { if (STRINGS[l]) current = l; }
 export function getLang() { return current; }
 export function t(key) { return (STRINGS[current] && STRINGS[current][key]) || STRINGS.en[key] || key; }

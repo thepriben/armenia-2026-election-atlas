@@ -2,7 +2,7 @@
 // string, so any view can be copied and exchanged as a plain link.
 
 const DEFAULTS = {
-  lang: "en",
+  lang: "hy",
   view: "margin",      // winner | margin | turnout | party
   party: "civil_contract",
   marz: "",            // selected province iso, e.g. AM-ER
@@ -16,11 +16,6 @@ export function initState() {
   const q = new URLSearchParams(location.search);
   for (const k of Object.keys(DEFAULTS)) {
     if (q.has(k)) state[k] = q.get(k);
-  }
-  // language can also come from the browser on first visit
-  if (!q.has("lang")) {
-    const nav = (navigator.language || "en").slice(0, 2);
-    if (["en", "hy", "fr"].includes(nav)) state.lang = nav;
   }
   return getState();
 }

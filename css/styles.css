@@ -154,11 +154,14 @@ main { display: block; }
 .table-wrap { overflow-x: auto; }
 .datatable { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .datatable th, .datatable td { padding: 10px 12px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
-.datatable th:first-child, .datatable td:first-child { text-align: left; }
+.datatable th:first-child, .datatable td:first-child { text-align: left; white-space: normal; max-width: 320px; }
 .datatable th { color: var(--muted); font-weight: 700; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--surface); font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
 .datatable th:hover { color: var(--text); }
 .datatable tbody tr:hover { background: var(--surface-2); }
 .datatable .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 8px; vertical-align: middle; }
+/* National result table: always fit the container, never scroll sideways */
+#overview .table-wrap { overflow-x: visible; }
+#nationalTable th, #nationalTable td { white-space: normal; }
 .pill { font-size: .72rem; padding: 2px 8px; border-radius: 999px; font-weight: 700; }
 .pill.gov { background: color-mix(in srgb, var(--apricot) 25%, transparent); color: var(--apricot); }
 .pill.opp { background: color-mix(in srgb, #6aa3ff 22%, transparent); color: #8bb8ff; }
