@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Audit géocodage — Armenia Election Atlas</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+  :root { --bg:#0f1117; --panel:#171a23; --line:#2a2f3a; --text:#e6e8ee; --muted:#9aa3b2; --accent:#F58220; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg); }
+  #app { display: flex; flex-direction: column; height: 100%; }
+  header { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 10px 14px; background: var(--panel); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 15px; margin: 0; font-weight: 700; }
+  header h1 small { color: var(--muted); font-weight: 500; }
+  .ctrl { display: flex; align-items: center; gap: 6px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .seg button { background: transparent; color: var(--text); border: 0; padding: 6px 12px; cursor: pointer; font-weight: 600; }
+  .seg button.active { background: var(--accent); color: #111; }
+  select, input[type=search] { background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; font: inherit; }
+  label.chk { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); cursor: pointer; }
+  #stats { margin-left: auto; color: var(--muted); font-variant-numeric: tabular-nums; }
+  #stats b { color: var(--text); }
+  #map { flex: 1; background: #0b0d12; }
+  .leaflet-popup-content { font: 13px/1.5 inherit; }
+  .leaflet-popup-content b { font-size: 14px; }
+  .leaflet-popup-content .muted { color: #667; }
+  .legend { background: rgba(23,26,35,.92); color: var(--text); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); line-height: 1.7; font-size: 12px; }
+  .legend i { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+  .warn { color: #ffb454; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Audit géocodage <small>— conformité des points sur fond OpenStreetMap</small></h1>
+    <div class="ctrl"><div class="seg" id="years"></div></div>
+    <div class="ctrl"><label for="marz" class="chk">Marz</label>
+      <select id="marz"><option value="">Tous</option></select></div>
+    <div class="ctrl"><input id="search" type="search" placeholder="Chercher une localité…" size="18"></div>
+    <div class="ctrl">
+      <label class="chk"><input type="checkbox" id="tComm" checked> Communes</label>
+      <label class="chk"><input type="checkbox" id="tSett" checked> Localités</label>
+      <label class="chk"><input type="checkbox" id="tLink"> Liens vers chef-lieu</label>
+    </div>
+    <div id="stats"></div>
+  </header>
+  <div id="map"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+const map = L.map("map", { preferCanvas: true, worldCopyJump: false }).setView([40.25, 44.9], 8);
+// Sober attribution — drop Leaflet's default Ukrainian-flag prefix.
+map.attributionControl.setPrefix('<a href="https://leafletjs.com" title="Leaflet">Leaflet</a>');
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+const commLayer = L.layerGroup().addTo(map);
+const settLayer = L.layerGroup().addTo(map);
+const linkLayer = L.layerGroup();
+
+let parties = {};
+let state = { year: null, marz: "", comms: [], setts: [], q: "" };
+
+const fmt = (n) => (n ?? 0).toLocaleString("fr-FR");
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function topHtml(top) {
+  return (top || []).map((t) => {
+    const p = parties[t.id] || {};
+    return `<div><i style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${p.color || "#888"};margin-right:6px"></i>${esc(p.name_fr || p.name_en || t.id)} — <b>${t.pct.toFixed(1)}%</b></div>`;
+  }).join("");
+}
+
+function commPopup(c) {
+  return `<b>${esc(c.community_en)} / ${esc(c.community_hy)}</b><br>
+    <span class="muted">${esc(c.marz_en)} · ${c.settlement_count || 1} localité(s)</span><br>
+    ${fmt(c.registered)} inscrits · ${c.turnout_pct}% part.<br>
+    <span class="muted">${c.lat.toFixed(5)}, ${c.lon.toFixed(5)}</span><hr style="border:0;border-top:1px solid #334;margin:6px 0">${topHtml(c.top)}`;
+}
+
+function settPopup(s, c, distKm) {
+  const far = distKm != null && distKm > 22;
+  return `<b>${esc(s.locality_en || s.locality_hy)} / ${esc(s.locality_hy)}</b><br>
+    <span class="muted">${esc(s.community_hy)}, ${esc(s.marz_en)}</span><br>
+    ${fmt(s.registered)} inscrits · ${s.turnout_pct}% part.<br>
+    <span class="muted">${s.lat.toFixed(5)}, ${s.lon.toFixed(5)}</span>${distKm != null ? `<br><span class="${far ? "warn" : "muted"}">${distKm.toFixed(1)} km du chef-lieu</span>` : ""}`;
+}
+
+function kmDist(aLat, aLon, bLat, bLon) {
+  const R = 6371, p = Math.PI / 180;
+  const dLat = (bLat - aLat) * p, dLon = (bLon - aLon) * p;
+  const x = Math.sin(dLat / 2) ** 2 + Math.cos(aLat * p) * Math.cos(bLat * p) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(x));
+}
+
+function rScale(reg, max, lo, hi) {
+  return lo + (hi - lo) * Math.sqrt((reg || 0) / (max || 1));
+}
+
+function render() {
+  commLayer.clearLayers(); settLayer.clearLayers(); linkLayer.clearLayers();
+  const q = state.q.trim().toLowerCase();
+  const matchMarz = (m) => !state.marz || m === state.marz;
+  const commByKey = {};
+  state.comms.forEach((c) => { commByKey[`${c.marz_iso}|${c.community}`] = c; });
+
+  const maxComm = Math.max(...state.comms.map((c) => c.registered || 0), 1);
+  let commShown = 0, settShown = 0, far = 0, noCoord = 0;
+
+  state.comms.forEach((c) => {
+    if (c.lat == null) { noCoord++; return; }
+    if (!matchMarz(c.marz_en)) return;
+    if (q && !(`${c.community_en} ${c.community_hy} ${c.community_fr}`.toLowerCase().includes(q))) return;
+    commShown++;
+    L.circleMarker([c.lat, c.lon], {
+      radius: rScale(c.registered, maxComm, 5, 17), color: "#111", weight: 1,
+      fillColor: c.winner_color, fillOpacity: 0.85,
+    }).bindPopup(commPopup(c)).addTo(commLayer);
+  });
+
+  const maxSett = Math.max(...state.setts.map((s) => s.registered || 0), 1);
+  state.setts.forEach((s) => {
+    if (s.lat == null) { noCoord++; return; }
+    if (!matchMarz(s.marz_en)) return;
+    if (q && !(`${s.locality_en} ${s.locality_hy}`.toLowerCase().includes(q))) return;
+    const parent = commByKey[`${s.marz_iso}|${s.community_hy}`];
+    let d = null;
+    if (parent && parent.lat != null) {
+      d = kmDist(s.lat, s.lon, parent.lat, parent.lon);
+      if (d > 22) far++;
+      L.polyline([[s.lat, s.lon], [parent.lat, parent.lon]], {
+        color: d > 22 ? "#ff6b6b" : "#5b6472", weight: 1, opacity: d > 22 ? 0.8 : 0.4,
+      }).addTo(linkLayer);
+    }
+    settShown++;
+    L.circleMarker([s.lat, s.lon], {
+      radius: rScale(s.registered, maxSett, 2.5, 8), color: "#0a0a0a", weight: 0.6,
+      fillColor: s.winner_color, fillOpacity: 0.8,
+    }).bindPopup(settPopup(s, parent, d)).addTo(settLayer);
+  });
+
+  document.getElementById("stats").innerHTML =
+    `<b>${commShown}</b> communes · <b>${settShown}</b> localités` +
+    (far ? ` · <span class="warn">${far} &gt;22 km</span>` : "") +
+    (noCoord ? ` · <span class="warn">${noCoord} sans coord.</span>` : "");
+}
+
+async function loadYear(year) {
+  state.year = year;
+  document.querySelectorAll("#years button").forEach((b) => b.classList.toggle("active", b.dataset.y === year));
+  const [comms, setts, prt] = await Promise.all([
+    fetch(`data/${year}/communities_geo.json`).then((r) => r.json()),
+    fetch(`data/${year}/settlements_geo.json`).then((r) => r.json()).catch(() => ({ by_community: {} })),
+    fetch(`data/${year}/parties.json`).then((r) => r.json()).catch(() => []),
+  ]);
+  state.comms = comms.communities || [];
+  state.setts = Object.values(setts.by_community || {}).flat();
+  parties = Object.fromEntries(prt.map((p) => [p.id, p]));
+  buildLegend();
+
+  const marze = [...new Set(state.comms.map((c) => c.marz_en))].sort();
+  const sel = document.getElementById("marz");
+  sel.innerHTML = '<option value="">Tous les marz</option>' + marze.map((m) => `<option value="${esc(m)}">${esc(m)}</option>`).join("");
+  sel.value = state.marz = "";
+
+  render();
+  const pts = state.comms.filter((c) => c.lat != null).map((c) => [c.lat, c.lon]);
+  if (pts.length) map.fitBounds(pts, { padding: [30, 30] });
+}
+
+let legendCtl = null;
+function buildLegend() {
+  if (legendCtl) map.removeControl(legendCtl);
+  const winners = [...new Set(state.comms.map((c) => c.winner))].filter((id) => parties[id]);
+  legendCtl = L.control({ position: "bottomleft" });
+  legendCtl.onAdd = () => {
+    const div = L.DomUtil.create("div", "legend");
+    div.innerHTML = "<b>Vainqueur (couleur)</b><br>" + winners.map((id) =>
+      `<div><i style="background:${parties[id].color}"></i>${esc(parties[id].name_fr || parties[id].name_en)}</div>`).join("");
+    return div;
+  };
+  legendCtl.addTo(map);
+}
+
+function bindLayer(id, layer) {
+  document.getElementById(id).addEventListener("change", (e) => {
+    if (e.target.checked) layer.addTo(map); else map.removeLayer(layer);
+  });
+}
+
+async function init() {
+  const elections = await fetch("data/elections.json").then((r) => r.json());
+  const list = (elections.elections || []).map((e) => e.id).sort().reverse();
+  document.getElementById("years").innerHTML = list.map((y) =>
+    `<button data-y="${y}">${y}</button>`).join("");
+  document.querySelectorAll("#years button").forEach((b) =>
+    b.addEventListener("click", () => loadYear(b.dataset.y)));
+
+  document.getElementById("marz").addEventListener("change", (e) => { state.marz = e.target.value; render(); });
+  document.getElementById("search").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+  bindLayer("tComm", commLayer);
+  bindLayer("tSett", settLayer);
+  bindLayer("tLink", linkLayer);
+
+  await loadYear(elections.default || list[0]);
+}
+
+init();
+</script>
+</body>
+</html>
