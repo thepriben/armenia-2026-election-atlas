@@ -354,6 +354,7 @@ async function drawExplorer() {
 function renderAbout() {
   const src = core.meta.source;
   const items = [
+    { h: t("about_coverage"), b: t("about_coverage_body") },
     { h: t("about_source"), b: `${src.authority}<br><a href="${src.results_by_station}" target="_blank" rel="noopener">results by polling station ↗</a> · <a href="${src.polling_station_registry}" target="_blank" rel="noopener">station registry ↗</a>` },
     { h: t("about_repro"), b: t("about_repro_body") },
     { h: t("about_boundaries"), b: src.boundaries },
