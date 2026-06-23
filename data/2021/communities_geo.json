@@ -1,6 +1,6 @@
 {
   "source": "GeoNames (CC-BY) + CEC results",
-  "located": 496,
+  "located": 497,
   "total": 513,
   "communities": [
     {
@@ -11448,8 +11448,8 @@
           "pct": 4.4
         }
       ],
-      "lat": null,
-      "lon": null
+      "lat": 40.5722,
+      "lon": 43.8669
     },
     {
       "community": "Անուշավան գյուղ",

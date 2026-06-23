@@ -341,12 +341,20 @@ def build():
     registry = read_registry()
 
     df = results.merge(registry, on="station", how="left")
-    unmatched = df[df["marz_hy"].isna() | (df["marz_hy"] == "")]
-    if len(unmatched):
-        print(f"WARNING: {len(unmatched)} stations without marz mapping", file=sys.stderr)
 
+    # Integrity guard against "non-territorial" ballots (electronic votes by
+    # diplomats / military, any future out-of-country line) being silently folded
+    # into a province. Such rows carry a marz label absent from the 11-province
+    # MARZ table; we surface them and keep them out of the geographic aggregation.
     df["marz_iso"] = df["marz_hy"].map(lambda x: MARZ.get(x, (None,))[0])
     df["marz_en"] = df["marz_hy"].map(lambda x: MARZ.get(x, (None, None))[1])
+    unmatched = df[df["marz_iso"].isna()]
+    out_of_marz_votes = int(unmatched["valid"].sum())
+    if len(unmatched):
+        labels = sorted({(r or "(blank)") for r in unmatched["marz_hy"].fillna("")})
+        print(f"WARNING: {len(unmatched)} stations outside the 11 provinces "
+              f"({out_of_marz_votes} valid votes) — kept national-only, not a province. "
+              f"Labels: {labels}", file=sys.stderr)
 
     # --- station level (full granular) ---
     cols = (["tec", "station", "constituency", "marz_hy", "marz_en", "marz_iso",
@@ -438,6 +446,14 @@ def build():
         }
         for pid in PARTY_IDS:
             party_marz_pct[pid][iso] = sh[pid]["pct"]
+    if len(marz_json) != len(MARZ):
+        sys.exit(f"Integrity error: produced {len(marz_json)} provinces, expected "
+                 f"{len(MARZ)} — a non-province (diaspora/electronic/abroad?) row "
+                 f"may have leaked in. ISOs: {sorted(marz_json)}")
+    marz_valid_sum = sum(m["valid"] for m in marz_json.values())
+    if marz_valid_sum + out_of_marz_votes != nat_valid:
+        sys.exit(f"Integrity error: marz valid ({marz_valid_sum}) + out-of-marz "
+                 f"({out_of_marz_votes}) != national valid ({nat_valid}).")
     (DATA / "marz.json").write_text(
         json.dumps(marz_json, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -465,8 +481,11 @@ def build():
                    for hy_, (iso, en, fr, hy) in MARZ.items()},
         "integrity": {
             "stations_parsed": int(len(results)),
+            "provinces": len(marz_json),
             "national_valid_votes": nat_valid,
             "national_ballots_cast": nat_cast,
+            "out_of_province_stations": int(len(unmatched)),
+            "out_of_province_valid_votes": out_of_marz_votes,
             "seat_winner_votes": {pid: int(results[pid].sum()) for pid in CFG["seats"]},
         },
         "files": {

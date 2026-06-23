@@ -65,10 +65,13 @@ def load_geonames():
     return idx
 
 
-# Communities GeoNames cannot resolve (ligature edge cases / Yerevan districts).
+# Communities GeoNames cannot resolve (ligature edge cases / Yerevan districts /
+# consolidated municipalities named differently from their seat settlement).
 MANUAL = {
     "Նուբարաշեն": (40.1296, 44.5406),  # Nubarashen, district of Yerevan
     "Արեվուտ": (40.3253, 44.6190),     # Arevut community (Kotayk), Nor Hachn area
+    "Նաիրի": (40.3217, 44.4814),       # Nairi municipality (Kotayk), seat Yeghvard
+    "Անի": (40.5722, 43.8669),         # Ani municipality (Shirak), seat Maralik
 }
 
 # Settlement designators appended by the CEC ("village", "town", "station").

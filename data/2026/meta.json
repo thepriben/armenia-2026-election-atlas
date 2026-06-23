@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-06-23T17:17:55+00:00",
+  "generated_utc": "2026-06-23T18:32:21+00:00",
   "source": {
     "results_by_station": "https://www.elections.am/File/ElectionResult?electionId=28826",
     "polling_station_registry": "https://www.elections.am/File/SubDistrictsToExcel?electionId=28826",
@@ -66,8 +66,11 @@
   },
   "integrity": {
     "stations_parsed": 2005,
+    "provinces": 11,
     "national_valid_votes": 1456351,
     "national_ballots_cast": 1476359,
+    "out_of_province_stations": 0,
+    "out_of_province_valid_votes": 0,
     "seat_winner_votes": {
       "civil_contract": 726489,
       "strong_armenia": 339993,
