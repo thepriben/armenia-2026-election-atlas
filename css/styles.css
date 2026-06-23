@@ -45,7 +45,9 @@ h1,h2,h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -.01em; 
   backdrop-filter: blur(14px); border-bottom: 1px solid var(--line);
 }
 .topbar-main { display: flex; align-items: center; gap: 18px; }
-.brand { font-family: var(--serif); font-weight: 900; text-decoration: none; font-size: 1.02rem; white-space: nowrap; }
+.brand { display: inline-flex; flex-direction: column; gap: 1px; text-decoration: none; line-height: 1.12; }
+.brand-title { font-family: var(--serif); font-weight: 900; font-size: 1.02rem; color: var(--text); white-space: nowrap; }
+.brand-sub { font-size: .68rem; font-weight: 600; letter-spacing: .03em; color: var(--muted); white-space: nowrap; }
 .mainnav { display: flex; gap: 4px; flex-wrap: wrap; padding-top: 8px; border-top: 1px solid var(--line); }
 .mainnav a {
   text-decoration: none; color: var(--muted); font-weight: 600; font-size: .9rem;
@@ -53,6 +55,7 @@ h1,h2,h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -.01em; 
 }
 .mainnav a:hover, .mainnav a.active { color: var(--text); background: var(--surface-2); }
 .topctrl { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+.topctrl .election-switch { margin-right: 14px; padding-right: 16px; border-right: 1px solid var(--line); }
 .langswitch { display: inline-flex; background: var(--surface-2); border-radius: 999px; padding: 3px; border: 1px solid var(--line); }
 .langswitch button {
   border: 0; background: transparent; color: var(--muted); cursor: pointer;
@@ -231,6 +234,10 @@ button.epill { cursor: pointer; }
 .repo-badge .rb-stars { display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border-left: 1px solid var(--line); color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 700; }
 .repo-badge .rb-stars svg { color: #e3b341; }
 .repo-badge:hover .rb-stars { color: var(--text); }
+.badges { display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.bmc-badge .rb-mark { background: #ffdd00; color: #000; }
+.bmc-badge .rb-stars { font-weight: 700; }
+.bmc-badge:hover { border-color: #ffdd00; }
 .dl-links { display: flex; gap: 8px; flex-wrap: wrap; }
 .dl-links a { text-decoration: none; font-size: .82rem; font-weight: 700; padding: 7px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); }
 .dl-links a:hover { border-color: var(--accent); color: var(--accent); }
@@ -240,6 +247,7 @@ button.epill { cursor: pointer; }
   .grid-2, .map-layout, .party-detail { grid-template-columns: 1fr; }
   /* Keep navigation on mobile: a horizontally scrollable strip under the brand */
   .topbar-main { flex-wrap: wrap; row-gap: 8px; column-gap: 12px; }
+  .brand-sub { display: none; }
   .topctrl { margin-left: auto; }
   .mainnav {
     width: 100%; flex-wrap: nowrap;

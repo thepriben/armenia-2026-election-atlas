@@ -137,7 +137,13 @@ function applyDynamicCopy() {
       .replace("{p}", n.threshold_party_pct)
       .replace("{a}", n.threshold_alliance_pct);
   }
-  const ledeEl = document.querySelector('[data-i18n="hero_lede"]');
+  const lang = getLang();
+  const titleEl = $("#heroTitle");
+  if (titleEl) {
+    const e = electionList.find((x) => x.id === electionId);
+    titleEl.textContent = (e && e.name && (e.name[lang] || e.name.en)) || t("site_title");
+  }
+  const ledeEl = $("#heroLede");
   if (ledeEl) {
     const w = n.parties[0];
     const allWon = core.marz && Object.values(core.marz).every((m) => m.winner === w.id);
