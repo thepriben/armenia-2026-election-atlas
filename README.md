@@ -67,15 +67,6 @@ No build step. The site is plain ES modules + D3 (from CDN) + hyparquet for in-b
 2. Settings → Pages → *Deploy from a branch* → `main` / root.
 3. A `.nojekyll` file is included so `data/` and `.parquet` files are served as-is.
 
-## A note on neutrality and constituencies
-
-Party descriptions are deliberately descriptive, not partisan. Armenia uses a **fully
-proportional** system with nationwide lists — there are no single-member constituencies;
-the 38 "territorial electoral commissions" are administrative, so the atlas maps the
-**marz** (province) as its geographic unit. Overseas/diaspora citizens do not vote at
-embassies; only a narrow electronic vote (diplomats, deployed military and families,
-~410 voters) exists and is **not** shown as a province.
-
 ## License
 
 Code: **MIT**. Data: see sources above (CEC public; geoBoundaries CC-BY; GeoNames CC-BY; ArmStat).

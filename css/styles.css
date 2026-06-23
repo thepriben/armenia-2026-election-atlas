@@ -26,7 +26,7 @@
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 body {
   margin: 0; font-family: var(--font); background: var(--bg); color: var(--text);
-  -webkit-font-smoothing: antialiased; line-height: 1.55;
+  -webkit-font-smoothing: antialiased; line-height: 1.55; overflow-x: hidden;
   background-image:
     radial-gradient(900px 500px at 85% -8%, rgba(242,169,0,.10), transparent 60%),
     radial-gradient(800px 500px at 0% 0%, rgba(0,51,160,.10), transparent 55%);
@@ -229,6 +229,42 @@ main { display: block; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .grid-2, .map-layout, .party-detail { grid-template-columns: 1fr; }
-  .mainnav { display: none; }
+  /* Keep navigation on mobile: a horizontally scrollable strip under the brand */
+  .topbar { flex-wrap: wrap; row-gap: 8px; column-gap: 12px; }
+  .topctrl { margin-left: auto; }
+  .mainnav {
+    order: 3; width: 100%; margin-left: 0; flex-wrap: nowrap;
+    overflow-x: auto; gap: 2px; padding-bottom: 2px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .mainnav::-webkit-scrollbar { display: none; }
+  .mainnav a { white-space: nowrap; }
+  .map-panel { min-height: 0; }
+}
+@media (max-width: 600px) {
+  .section { padding: 40px 16px; }
+  .section-head { margin-bottom: 18px; }
+  .hero-inner { padding: 48px 16px 40px; }
+  .hero-bg { opacity: .22; }
+  .hero-title { margin-bottom: 14px; }
+  .card { padding: 16px; }
+  .map-stage { padding: 10px; }
+  .statgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 26px; }
+  .stat { padding: 13px; border-radius: 12px; }
+  .stat .v { overflow-wrap: anywhere; }
+  .stat .v { font-size: 1.4rem; }
+  .select { min-width: 0; flex: 1 1 140px; }
+  .sharebtn { margin-left: 0; width: 100%; text-align: center; }
+  .zoom-ctrl { top: 14px; right: 14px; }
+  .datatable th, .datatable td { padding: 8px 9px; }
+  /* National table has 6 columns; on phones drop raw vote count + leader so the
+     essentials (party, %, seats, bloc) fit without horizontal scroll. */
+  #nationalTable { font-size: .78rem; }
+  #nationalTable th, #nationalTable td { padding: 7px 4px; }
+  #nationalTable th:nth-child(2), #nationalTable td:nth-child(2),
+  #nationalTable th:nth-child(6), #nationalTable td:nth-child(6) { display: none; }
+  #nationalTable th:first-child, #nationalTable td:first-child { max-width: 116px; }
+  #nationalTable .pill { font-size: .64rem; padding: 2px 6px; }
+  #nationalTable .swatch { margin-right: 5px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }

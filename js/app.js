@@ -1,7 +1,7 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import { STRINGS, LANGS, LANG_LABEL, t, setLang, getLang, pickLangField } from "./i18n.js";
 import { loadCore, loadCommunities } from "./data.js";
-import { initState, getState, setState, onState, shareURL } from "./state.js";
+import { initState, getState, setState, onState } from "./state.js";
 import { createMap, renderLegend } from "./map.js";
 import { voteBars, hemicycle, miniMap, communityMap } from "./charts.js";
 import { nationalTable, explorerTable } from "./table.js";
@@ -42,8 +42,8 @@ async function init() {
   buildMapControls();
   buildDataExplorer();
   renderAbout();
-  wireShare();
   wireScrollSpy();
+  wireTooltipDismiss();
   loadRepoStars();
 
   onState((s, patch) => {
@@ -344,15 +344,15 @@ function renderAbout() {
     `<div class="ab"><h4>${i.h}</h4><p class="muted small">${i.b}</p></div>`).join("");
 }
 
-/* ---------------- share + scrollspy ---------------- */
-function wireShare() {
-  $("#shareMap").addEventListener("click", async () => {
-    try { await navigator.clipboard.writeText(shareURL()); } catch (e) {}
-    const toast = $("#toast");
-    toast.textContent = t("share_copied");
-    toast.hidden = false;
-    setTimeout(() => (toast.hidden = true), 1600);
-  });
+/* ---------------- scrollspy ---------------- */
+// On touch devices a tap fires a synthetic mousemove that shows a tooltip but
+// no mouseleave follows, so the tooltip can linger while scrolling. Dismiss it
+// on scroll and when a touch ends.
+function wireTooltipDismiss() {
+  const hide = () => document.querySelectorAll(".tooltip").forEach((el) => { el.style.opacity = "0"; });
+  window.addEventListener("scroll", hide, { passive: true });
+  window.addEventListener("touchmove", hide, { passive: true });
+  window.addEventListener("touchend", hide, { passive: true });
 }
 
 function wireScrollSpy() {
