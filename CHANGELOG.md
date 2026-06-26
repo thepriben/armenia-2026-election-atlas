@@ -5,6 +5,23 @@ All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] — 2026-06-26
+
+### Added
+
+- **2017 parliamentary election** (2 April 2017) added to the portal, at the same
+  granularity and with every feature of the 2021/2026 views: national results,
+  105-seat hemicycle, full party table, province choropleth, ~81-community bubble
+  map, settlement drill-down and OpenStreetMap audit page.
+  - 9 ballot forces, incl. the four that entered parliament: Republican Party of
+    Armenia (49.1 %, 58 seats), Tsarukyan Alliance (27.4 %, 31), Way Out / Yelk
+    (7.8 %, 9) and the ARF–Dashnaktsutyun (6.6 %, 7).
+  - Re-aggregated to the modern consolidated communities (`consolidate_from: 2026`),
+    with three depopulated border villages mapped to their surviving municipalities
+    (Nerkin/Verin Shorzha → Vardenis, Nor Astghaberd → Kajaran).
+  - 100 % geocoding: 81/81 communities and 925/925 settlements located, with
+    trilingual party profiles and Wikipedia/Wikidata cross-references.
+
 ## [1.0.0] — 2026-06-23
 
 First public release: a trilingual (EN / HY / FR) interactive geographic atlas of

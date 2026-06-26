@@ -213,6 +213,49 @@ ELECTIONS = {
              "Վեր / Ver", None, "below-threshold", "centrist", "#588157"),
         ],
     },
+    "2017": {
+        "election": "National Assembly of Armenia — ordinary election, 2 April 2017",
+        "date": "2017-04-02",
+        "election_id": 27339,
+        "threshold_party_pct": 5.0,
+        "threshold_alliance_pct": 7.0,
+        "total_seats": 105,
+        "col_inaccuracy": 24,
+        # April 2017 still used the pre-reform communities (~900 localities).
+        # Re-aggregate to the modern consolidated municipalities so the community
+        # level matches 2021/2026 and is free of cross-province homonyms.
+        "consolidate_from": "2026",
+        "seats": {"republican": 58, "tsarukyan_alliance": 31, "yelk": 9, "arf": 7},
+        "parties": [
+            (20, "republican", "party",
+             "Հայաստանի Հանրապետական կուսակցություն", "Republican Party of Armenia", "Parti républicain d’Arménie",
+             "ՀՀԿ / RPA", "Serzh Sargsyan", "government", "national-conservative", "#2D5DA1"),
+            (18, "tsarukyan_alliance", "alliance",
+             "«Ծառուկյան» կուսակցությունների դաշինք", "Tsarukyan Alliance", "Alliance « Tsaroukian »",
+             "ԾԴ / Tsar", "Gagik Tsarukyan", "opposition", "centrist-populist", "#E8A300"),
+            (15, "yelk", "alliance",
+             "«ԵԼՔ» կուսակցությունների դաշինք", "Way Out (Yelk) Alliance", "Alliance « Yelk » (Sortie)",
+             "ԵԼՔ / Yelk", "Nikol Pashinyan", "opposition", "liberal-reformist", "#F58220"),
+            (23, "arf", "party",
+             "«Հայ յեղափոխական դաշնակցություն» կուսակցություն", "Armenian Revolutionary Federation (Dashnaktsutyun)", "Fédération révolutionnaire arménienne (Dachnaktsoutioun)",
+             "ՀՅԴ / ARF", "Armen Rustamyan", "government", "socialist-nationalist", "#C8102E"),
+            (19, "congress_ppa", "alliance",
+             "«Կոնգրես–ՀԺԿ» կուսակցությունների դաշինք", "Congress–PPA Alliance (ANC–People’s Party)", "Alliance Congrès–PPA",
+             "ԿՀԺԿ / Cong", "Levon Ter-Petrosyan", "below-threshold", "social-liberal", "#577590"),
+            (17, "armenian_renaissance", "party",
+             "«Հայկական վերածնունդ» կուսակցություն", "Armenian Renaissance", "Renaissance arménienne",
+             "ՀՎ / AR", "Artur Baghdasaryan", "below-threshold", "conservative", "#0F8B8D"),
+            (16, "free_democrats", "party",
+             "Ազատ դեմոկրատներ կուսակցություն", "Free Democrats", "Démocrates libres",
+             "ԱԴ / FD", "Khachatur Kokobelyan", "below-threshold", "liberal", "#5B8C5A"),
+            (22, "oro", "alliance",
+             "«Օհանյան–Րաֆֆի–Օսկանյան» կուսակցությունների դաշինք", "Ohanyan–Raffi–Oskanian (ORO) Alliance", "Alliance Ohanian–Raffi–Oskanian (ORO)",
+             "ՕՌՕ / ORO", "Seyran Ohanyan", "below-threshold", "national-conservative", "#6A2E8F"),
+            (21, "communist", "party",
+             "Հայաստանի կոմունիստական կուսակցություն", "Communist Party of Armenia", "Parti communiste d’Arménie",
+             "ՀԿԿ / CPA", "Tachat Sargsyan", "below-threshold", "communist", "#8A1C1C"),
+        ],
+    },
 }
 
 if ELECTION not in ELECTIONS:
@@ -271,6 +314,10 @@ def _cnorm(s: str) -> str:
 MANUAL_CONSOLIDATION = {
     ("Շիրակ", "Արփի"): "Ամասիա",        # Arpi community (centre Berdashen) merged into Amasia
     ("Կոտայք", "Նոր Երզնկա"): "Նաիրի",  # Nor Yerznka -> Nairi (centre Yeghvard)
+    # 2017-only border villages, depopulated/absent from the 2026 registry.
+    ("Գեղարքունիք", "Ներքին Շորժա"): "Վարդենիս",  # Nerkin Shorzha -> Vardenis Municipality
+    ("Գեղարքունիք", "Վերին Շորժա"): "Վարդենիս",   # Verin Shorzha  -> Vardenis Municipality
+    ("Սյունիք", "Նոր Աստղաբերդ"): "Քաջարան",      # Nor Astghaberd -> Kajaran Municipality
 }
 
 

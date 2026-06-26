@@ -12,6 +12,11 @@ const LEADER_LINK = {
   anc: "leader_ter_petrosyan", bright_armenia: "leader_marukyan",
   hanrapetutyun: "leader_sargsyan", wings_of_unity: "leader_tandilyan",
   i_have_honor: "leader_vanetsyan",
+  // 2017 parties
+  republican: "leader_serzh_sargsyan", tsarukyan_alliance: "leader_tsarukyan",
+  yelk: "leader_pashinyan", arf: "leader_rustamyan",
+  congress_ppa: "leader_ter_petrosyan", armenian_renaissance: "leader_baghdasaryan",
+  oro: "leader_ohanyan",
 };
 
 let core, mapApi, communities = null, electionId, electionList = [];

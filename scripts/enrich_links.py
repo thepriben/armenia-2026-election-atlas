@@ -97,6 +97,28 @@ TITLES_BY_ELECTION = {
         "leader_ter_petrosyan": "Levon Ter-Petrosyan",
         "leader_sargsyan": "Aram Sargsyan",
     },
+    "2017": {
+        # the election
+        "election": "2017 Armenian parliamentary election",
+        # parties / alliances (only those with reliable EN articles)
+        "republican": "Republican Party of Armenia",
+        "tsarukyan_alliance": "Tsarukyan Alliance",
+        "yelk": "Way Out Alliance",
+        "arf": "Armenian Revolutionary Federation",
+        "congress_ppa": "Armenian National Congress",
+        "armenian_renaissance": "Armenian Renaissance",
+        "free_democrats": "Free Democrats (Armenia)",
+        "oro": "ORO Alliance",
+        "communist": "Communist Party of Armenia (1991)",
+        # leaders
+        "leader_serzh_sargsyan": "Serzh Sargsyan",
+        "leader_tsarukyan": "Gagik Tsarukyan",
+        "leader_pashinyan": "Nikol Pashinyan",
+        "leader_rustamyan": "Armen Rustamyan",
+        "leader_ter_petrosyan": "Levon Ter-Petrosyan",
+        "leader_baghdasaryan": "Artur Baghdasaryan",
+        "leader_ohanyan": "Seyran Ohanyan",
+    },
 }
 
 if ELECTION not in TITLES_BY_ELECTION:

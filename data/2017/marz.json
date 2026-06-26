@@ -1,0 +1,717 @@
+{
+  "AM-AG": {
+    "iso": "AM-AG",
+    "name_en": "Aragatsotn",
+    "name_hy": "Արագածոտն",
+    "name_fr": "Aragatsotn",
+    "registered": 116816,
+    "ballots_cast": 77734,
+    "valid": 76397,
+    "invalid": 207,
+    "turnout_pct": 66.54,
+    "stations": 142,
+    "winner": "republican",
+    "winner_pct": 44.52,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 14.24,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "armenian_renaissance",
+      "oro",
+      "yelk",
+      "congress_ppa",
+      "communist",
+      "free_democrats"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 34012,
+        "pct": 44.52
+      },
+      "tsarukyan_alliance": {
+        "votes": 23136,
+        "pct": 30.284
+      },
+      "yelk": {
+        "votes": 1757,
+        "pct": 2.3
+      },
+      "arf": {
+        "votes": 8557,
+        "pct": 11.201
+      },
+      "congress_ppa": {
+        "votes": 1676,
+        "pct": 2.194
+      },
+      "armenian_renaissance": {
+        "votes": 3818,
+        "pct": 4.998
+      },
+      "free_democrats": {
+        "votes": 245,
+        "pct": 0.321
+      },
+      "oro": {
+        "votes": 2716,
+        "pct": 3.555
+      },
+      "communist": {
+        "votes": 480,
+        "pct": 0.628
+      }
+    }
+  },
+  "AM-AR": {
+    "iso": "AM-AR",
+    "name_en": "Ararat",
+    "name_hy": "Արարատ",
+    "name_fr": "Ararat",
+    "registered": 221507,
+    "ballots_cast": 151692,
+    "valid": 151297,
+    "invalid": 345,
+    "turnout_pct": 68.48,
+    "stations": 154,
+    "winner": "republican",
+    "winner_pct": 51.844,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 16.4,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "yelk",
+      "armenian_renaissance",
+      "congress_ppa",
+      "oro",
+      "free_democrats",
+      "communist"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 78439,
+        "pct": 51.844
+      },
+      "tsarukyan_alliance": {
+        "votes": 53632,
+        "pct": 35.448
+      },
+      "yelk": {
+        "votes": 6643,
+        "pct": 4.391
+      },
+      "arf": {
+        "votes": 7364,
+        "pct": 4.867
+      },
+      "congress_ppa": {
+        "votes": 994,
+        "pct": 0.657
+      },
+      "armenian_renaissance": {
+        "votes": 2379,
+        "pct": 1.572
+      },
+      "free_democrats": {
+        "votes": 602,
+        "pct": 0.398
+      },
+      "oro": {
+        "votes": 752,
+        "pct": 0.497
+      },
+      "communist": {
+        "votes": 492,
+        "pct": 0.325
+      }
+    }
+  },
+  "AM-AV": {
+    "iso": "AM-AV",
+    "name_en": "Armavir",
+    "name_hy": "Արմավիր",
+    "name_fr": "Armavir",
+    "registered": 232010,
+    "ballots_cast": 128828,
+    "valid": 128339,
+    "invalid": 460,
+    "turnout_pct": 55.53,
+    "stations": 168,
+    "winner": "republican",
+    "winner_pct": 53.111,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 28.8,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "yelk",
+      "armenian_renaissance",
+      "oro",
+      "congress_ppa",
+      "communist",
+      "free_democrats"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 68162,
+        "pct": 53.111
+      },
+      "tsarukyan_alliance": {
+        "votes": 31201,
+        "pct": 24.311
+      },
+      "yelk": {
+        "votes": 6218,
+        "pct": 4.845
+      },
+      "arf": {
+        "votes": 11579,
+        "pct": 9.022
+      },
+      "congress_ppa": {
+        "votes": 1451,
+        "pct": 1.131
+      },
+      "armenian_renaissance": {
+        "votes": 4726,
+        "pct": 3.682
+      },
+      "free_democrats": {
+        "votes": 932,
+        "pct": 0.726
+      },
+      "oro": {
+        "votes": 3073,
+        "pct": 2.394
+      },
+      "communist": {
+        "votes": 997,
+        "pct": 0.777
+      }
+    }
+  },
+  "AM-GR": {
+    "iso": "AM-GR",
+    "name_en": "Gegharkunik",
+    "name_hy": "Գեղարքունիք",
+    "name_fr": "Guégharkounik",
+    "registered": 191672,
+    "ballots_cast": 128268,
+    "valid": 127915,
+    "invalid": 341,
+    "turnout_pct": 66.92,
+    "stations": 155,
+    "winner": "republican",
+    "winner_pct": 52.594,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 22.33,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "armenian_renaissance",
+      "yelk",
+      "oro",
+      "congress_ppa",
+      "communist",
+      "free_democrats"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 67276,
+        "pct": 52.594
+      },
+      "tsarukyan_alliance": {
+        "votes": 38708,
+        "pct": 30.261
+      },
+      "yelk": {
+        "votes": 3346,
+        "pct": 2.616
+      },
+      "arf": {
+        "votes": 9107,
+        "pct": 7.12
+      },
+      "congress_ppa": {
+        "votes": 1179,
+        "pct": 0.922
+      },
+      "armenian_renaissance": {
+        "votes": 5004,
+        "pct": 3.912
+      },
+      "free_democrats": {
+        "votes": 460,
+        "pct": 0.36
+      },
+      "oro": {
+        "votes": 2367,
+        "pct": 1.85
+      },
+      "communist": {
+        "votes": 468,
+        "pct": 0.366
+      }
+    }
+  },
+  "AM-KT": {
+    "iso": "AM-KT",
+    "name_en": "Kotayk",
+    "name_hy": "Կոտայք",
+    "name_fr": "Kotayk",
+    "registered": 238421,
+    "ballots_cast": 140540,
+    "valid": 139666,
+    "invalid": 865,
+    "turnout_pct": 58.95,
+    "stations": 169,
+    "winner": "tsarukyan_alliance",
+    "winner_pct": 43.867,
+    "runner_up": "republican",
+    "margin": 9.27,
+    "order": [
+      "tsarukyan_alliance",
+      "republican",
+      "yelk",
+      "arf",
+      "oro",
+      "armenian_renaissance",
+      "congress_ppa",
+      "communist",
+      "free_democrats"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 48324,
+        "pct": 34.6
+      },
+      "tsarukyan_alliance": {
+        "votes": 61267,
+        "pct": 43.867
+      },
+      "yelk": {
+        "votes": 12190,
+        "pct": 8.728
+      },
+      "arf": {
+        "votes": 6568,
+        "pct": 4.703
+      },
+      "congress_ppa": {
+        "votes": 2013,
+        "pct": 1.441
+      },
+      "armenian_renaissance": {
+        "votes": 3252,
+        "pct": 2.328
+      },
+      "free_democrats": {
+        "votes": 906,
+        "pct": 0.649
+      },
+      "oro": {
+        "votes": 4019,
+        "pct": 2.878
+      },
+      "communist": {
+        "votes": 1127,
+        "pct": 0.807
+      }
+    }
+  },
+  "AM-LO": {
+    "iso": "AM-LO",
+    "name_en": "Lori",
+    "name_hy": "Լոռի",
+    "name_fr": "Lorri",
+    "registered": 238291,
+    "ballots_cast": 138222,
+    "valid": 137758,
+    "invalid": 464,
+    "turnout_pct": 58.01,
+    "stations": 221,
+    "winner": "republican",
+    "winner_pct": 62.216,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 43.68,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "yelk",
+      "arf",
+      "armenian_renaissance",
+      "congress_ppa",
+      "oro",
+      "communist",
+      "free_democrats"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 85707,
+        "pct": 62.216
+      },
+      "tsarukyan_alliance": {
+        "votes": 25540,
+        "pct": 18.54
+      },
+      "yelk": {
+        "votes": 11793,
+        "pct": 8.561
+      },
+      "arf": {
+        "votes": 5547,
+        "pct": 4.027
+      },
+      "congress_ppa": {
+        "votes": 2322,
+        "pct": 1.686
+      },
+      "armenian_renaissance": {
+        "votes": 3584,
+        "pct": 2.602
+      },
+      "free_democrats": {
+        "votes": 663,
+        "pct": 0.481
+      },
+      "oro": {
+        "votes": 1897,
+        "pct": 1.377
+      },
+      "communist": {
+        "votes": 705,
+        "pct": 0.512
+      }
+    }
+  },
+  "AM-SH": {
+    "iso": "AM-SH",
+    "name_en": "Shirak",
+    "name_hy": "Շիրակ",
+    "name_fr": "Chirak",
+    "registered": 230701,
+    "ballots_cast": 133299,
+    "valid": 132709,
+    "invalid": 529,
+    "turnout_pct": 57.78,
+    "stations": 220,
+    "winner": "republican",
+    "winner_pct": 40.557,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 8.32,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "armenian_renaissance",
+      "arf",
+      "yelk",
+      "oro",
+      "congress_ppa",
+      "free_democrats",
+      "communist"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 53823,
+        "pct": 40.557
+      },
+      "tsarukyan_alliance": {
+        "votes": 42776,
+        "pct": 32.233
+      },
+      "yelk": {
+        "votes": 4222,
+        "pct": 3.181
+      },
+      "arf": {
+        "votes": 12354,
+        "pct": 9.309
+      },
+      "congress_ppa": {
+        "votes": 1417,
+        "pct": 1.068
+      },
+      "armenian_renaissance": {
+        "votes": 13798,
+        "pct": 10.397
+      },
+      "free_democrats": {
+        "votes": 841,
+        "pct": 0.634
+      },
+      "oro": {
+        "votes": 2774,
+        "pct": 2.09
+      },
+      "communist": {
+        "votes": 704,
+        "pct": 0.53
+      }
+    }
+  },
+  "AM-SU": {
+    "iso": "AM-SU",
+    "name_en": "Syunik",
+    "name_hy": "Սյունիք",
+    "name_fr": "Syunik",
+    "registered": 115348,
+    "ballots_cast": 78122,
+    "valid": 77737,
+    "invalid": 384,
+    "turnout_pct": 67.73,
+    "stations": 153,
+    "winner": "republican",
+    "winner_pct": 55.554,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 28.97,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "yelk",
+      "armenian_renaissance",
+      "oro",
+      "congress_ppa",
+      "free_democrats",
+      "communist"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 43186,
+        "pct": 55.554
+      },
+      "tsarukyan_alliance": {
+        "votes": 20666,
+        "pct": 26.585
+      },
+      "yelk": {
+        "votes": 2330,
+        "pct": 2.997
+      },
+      "arf": {
+        "votes": 6056,
+        "pct": 7.79
+      },
+      "congress_ppa": {
+        "votes": 845,
+        "pct": 1.087
+      },
+      "armenian_renaissance": {
+        "votes": 2024,
+        "pct": 2.604
+      },
+      "free_democrats": {
+        "votes": 510,
+        "pct": 0.656
+      },
+      "oro": {
+        "votes": 1756,
+        "pct": 2.259
+      },
+      "communist": {
+        "votes": 364,
+        "pct": 0.468
+      }
+    }
+  },
+  "AM-TV": {
+    "iso": "AM-TV",
+    "name_en": "Tavush",
+    "name_hy": "Տավուշ",
+    "name_fr": "Tavouch",
+    "registered": 110037,
+    "ballots_cast": 73044,
+    "valid": 72715,
+    "invalid": 270,
+    "turnout_pct": 66.38,
+    "stations": 96,
+    "winner": "republican",
+    "winner_pct": 48.064,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 24.78,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "yelk",
+      "armenian_renaissance",
+      "oro",
+      "free_democrats",
+      "congress_ppa",
+      "communist"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 34950,
+        "pct": 48.064
+      },
+      "tsarukyan_alliance": {
+        "votes": 16932,
+        "pct": 23.285
+      },
+      "yelk": {
+        "votes": 2964,
+        "pct": 4.076
+      },
+      "arf": {
+        "votes": 9507,
+        "pct": 13.074
+      },
+      "congress_ppa": {
+        "votes": 1094,
+        "pct": 1.505
+      },
+      "armenian_renaissance": {
+        "votes": 2815,
+        "pct": 3.871
+      },
+      "free_democrats": {
+        "votes": 1543,
+        "pct": 2.122
+      },
+      "oro": {
+        "votes": 2557,
+        "pct": 3.516
+      },
+      "communist": {
+        "votes": 353,
+        "pct": 0.485
+      }
+    }
+  },
+  "AM-VD": {
+    "iso": "AM-VD",
+    "name_en": "Vayots Dzor",
+    "name_hy": "Վայոց ձոր",
+    "name_fr": "Vayots Dzor",
+    "registered": 47108,
+    "ballots_cast": 30700,
+    "valid": 30601,
+    "invalid": 95,
+    "turnout_pct": 65.17,
+    "stations": 53,
+    "winner": "republican",
+    "winner_pct": 48.858,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 13.8,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "arf",
+      "yelk",
+      "armenian_renaissance",
+      "oro",
+      "congress_ppa",
+      "free_democrats",
+      "communist"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 14951,
+        "pct": 48.858
+      },
+      "tsarukyan_alliance": {
+        "votes": 10729,
+        "pct": 35.061
+      },
+      "yelk": {
+        "votes": 1085,
+        "pct": 3.546
+      },
+      "arf": {
+        "votes": 1827,
+        "pct": 5.97
+      },
+      "congress_ppa": {
+        "votes": 297,
+        "pct": 0.971
+      },
+      "armenian_renaissance": {
+        "votes": 985,
+        "pct": 3.219
+      },
+      "free_democrats": {
+        "votes": 195,
+        "pct": 0.637
+      },
+      "oro": {
+        "votes": 351,
+        "pct": 1.147
+      },
+      "communist": {
+        "votes": 181,
+        "pct": 0.591
+      }
+    }
+  },
+  "AM-ER": {
+    "iso": "AM-ER",
+    "name_en": "Yerevan",
+    "name_hy": "Երևան",
+    "name_fr": "Erevan",
+    "registered": 845810,
+    "ballots_cast": 494590,
+    "valid": 491749,
+    "invalid": 2678,
+    "turnout_pct": 58.48,
+    "stations": 478,
+    "winner": "republican",
+    "winner_pct": 49.025,
+    "runner_up": "tsarukyan_alliance",
+    "margin": 27.84,
+    "order": [
+      "republican",
+      "tsarukyan_alliance",
+      "yelk",
+      "arf",
+      "armenian_renaissance",
+      "congress_ppa",
+      "oro",
+      "free_democrats",
+      "communist"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 241082,
+        "pct": 49.025
+      },
+      "tsarukyan_alliance": {
+        "votes": 104176,
+        "pct": 21.185
+      },
+      "yelk": {
+        "votes": 69465,
+        "pct": 14.126
+      },
+      "arf": {
+        "votes": 24557,
+        "pct": 4.994
+      },
+      "congress_ppa": {
+        "votes": 12660,
+        "pct": 2.574
+      },
+      "armenian_renaissance": {
+        "votes": 15877,
+        "pct": 3.229
+      },
+      "free_democrats": {
+        "votes": 7836,
+        "pct": 1.593
+      },
+      "oro": {
+        "votes": 10229,
+        "pct": 2.08
+      },
+      "communist": {
+        "votes": 5867,
+        "pct": 1.193
+      }
+    }
+  }
+}

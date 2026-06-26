@@ -43,6 +43,18 @@
           "fr": "11–13 juin 2021"
         }
       }
+    },
+    {
+      "id": "2017",
+      "dir": "data/2017",
+      "type": "parliamentary",
+      "date": "2017-04-02",
+      "status": "available",
+      "name": {
+        "en": "2017 parliamentary election",
+        "hy": "2017 թ. խորհրդարանական ընտրություններ",
+        "fr": "Élections législatives de 2017"
+      }
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "profiles": {
+    "republican": {
+      "en": "The long-governing party of President Serzh Sargsyan, in power since 1999. Campaigning on its record after the 2015 constitutional reform that turned Armenia into a parliamentary republic, it won 49.1% and 58 seats — its final victory before the 2018 Velvet Revolution swept it from power.",
+      "hy": "Նախագահ Սերժ Սարգսյանի երկարամյա իշխող կուսակցությունը՝ 1999 թվականից իշխանության ղեկին։ 2015 թ. սահմանադրական բարեփոխումից հետո, որը Հայաստանը դարձրեց խորհրդարանական հանրապետություն, ստացավ 49,1 % և 58 մանդատ՝ վերջին հաղթանակը մինչև 2018 թ. թավշյա հեղափոխությունը։",
+      "fr": "Le parti au pouvoir de longue date du président Serge Sargsian, aux commandes depuis 1999. Misant sur son bilan après la réforme constitutionnelle de 2015 qui a fait de l’Arménie une république parlementaire, il obtient 49,1 % et 58 sièges — son ultime victoire avant la révolution de velours de 2018."
+    },
+    "tsarukyan_alliance": {
+      "en": "A populist opposition bloc built around the business tycoon Gagik Tsarukyan and his Prosperous Armenia party. It finished a strong second with 27.4% and 31 seats.",
+      "hy": "Գործարար Գագիկ Ծառուկյանի և նրա «Բարգավաճ Հայաստան» կուսակցության շուրջ ձևավորված պոպուլիստական ընդդիմադիր դաշինք։ Զբաղեցրեց վստահ երկրորդ տեղը՝ 27,4 % և 31 մանդատ։",
+      "fr": "Un bloc d’opposition populiste bâti autour de l’homme d’affaires Gagik Tsaroukian et de son parti Arménie prospère. Il termine bon deuxième avec 27,4 % et 31 sièges."
+    },
+    "yelk": {
+      "en": "A small liberal-reformist opposition alliance led by Nikol Pashinyan’s Civil Contract, alongside Bright Armenia and the Republic party. It cleared the bar with 7.8% and 9 seats — the springboard from which Pashinyan launched the 2018 Velvet Revolution.",
+      "hy": "Փոքր լիբերալ-բարեփոխական ընդդիմադիր դաշինք՝ Նիկոլ Փաշինյանի «Քաղաքացիական պայմանագրի» գլխավորությամբ՝ «Լուսավոր Հայաստանի» և «Հանրապետության» հետ։ Հաղթահարեց շեմը՝ 7,8 % և 9 մանդատ՝ 2018 թ. թավշյա հեղափոխության մեկնակետը։",
+      "fr": "Une petite alliance d’opposition libérale-réformiste menée par le Contrat civil de Nikol Pachinian, avec Arménie lumineuse et le parti République. Elle franchit le seuil avec 7,8 % et 9 sièges — le tremplin de la révolution de velours de 2018."
+    },
+    "arf": {
+      "en": "The historic Armenian Revolutionary Federation (Dashnaktsutyun), founded in 1890. A junior partner in the governing coalition with the Republicans, it won 6.6% and 7 seats.",
+      "hy": "Պատմական «Հայ յեղափոխական դաշնակցությունը»՝ հիմնադրված 1890 թ.։ Հանրապետականների հետ իշխող կոալիցիայի կրտսեր գործընկեր, ստացավ 6,6 % և 7 մանդատ։",
+      "fr": "L’historique Fédération révolutionnaire arménienne (Dachnaktsoutioun), fondée en 1890. Partenaire mineur de la coalition gouvernementale avec les républicains, elle obtient 6,6 % et 7 sièges."
+    },
+    "congress_ppa": {
+      "en": "An opposition alliance of Levon Ter-Petrosyan’s Armenian National Congress and the People’s Party. It fell short of the 7% alliance threshold.",
+      "hy": "Լևոն Տեր-Պետրոսյանի «Հայ ազգային կոնգրեսի» և Ժողովրդական կուսակցության ընդդիմադիր դաշինք։ Չհաղթահարեց դաշինքների 7 % շեմը։",
+      "fr": "Une alliance d’opposition du Congrès national arménien de Levon Ter-Petrossian et du Parti populaire. Elle n’atteint pas le seuil de 7 % requis pour les alliances."
+    },
+    "armenian_renaissance": {
+      "en": "The party of Artur Baghdasaryan, the renamed Rule of Law (Orinats Yerkir). It narrowly missed the 5% threshold with 3.7%.",
+      "hy": "Արթուր Բաղդասարյանի կուսակցությունը՝ վերանվանված «Օրինաց երկիրը»։ Քիչ պակասով չհաղթահարեց 5 % շեմը՝ 3,7 %։",
+      "fr": "Le parti d’Artour Baghdassarian, ex-État de droit (Orinats Yerkir) rebaptisé. Il manque de peu le seuil de 5 % avec 3,7 %."
+    },
+    "free_democrats": {
+      "en": "A small liberal party led by Khachatur Kokobelyan, well below the 5% threshold.",
+      "hy": "Խաչատուր Կոկոբելյանի փոքր լիբերալ կուսակցությունը՝ 5 % շեմից զգալիորեն ցածր։",
+      "fr": "Un petit parti libéral dirigé par Khatchatour Kokobelian, nettement sous le seuil de 5 %."
+    },
+    "oro": {
+      "en": "The Ohanyan–Raffi–Oskanian alliance of three prominent figures: ex-defence minister Seyran Ohanyan, ex-foreign minister Raffi Hovannisian and ex-foreign minister Vartan Oskanian. It finished below the alliance threshold.",
+      "hy": "«Օհանյան–Րաֆֆի–Օսկանյան» դաշինքը՝ երեք ճանաչված գործիչների՝ նախկին պաշտպանության նախարար Սեյրան Օհանյանի, նախկին արտգործնախարարներ Րաֆֆի Հովհաննիսյանի և Վարդան Օսկանյանի։ Մնաց դաշինքների շեմից ցածր։",
+      "fr": "L’alliance Ohanian–Raffi–Oskanian de trois figures connues : l’ex-ministre de la Défense Seyran Ohanian, et les ex-ministres des Affaires étrangères Raffi Hovannisian et Vartan Oskanian. Elle reste sous le seuil des alliances."
+    },
+    "communist": {
+      "en": "The Communist Party of Armenia, a marginal force far below the threshold.",
+      "hy": "Հայաստանի կոմունիստական կուսակցությունը՝ շեմից շատ ցածր մնացած մարգինալ ուժ։",
+      "fr": "Le Parti communiste d’Arménie, force marginale très en deçà du seuil."
+    }
+  }
+}
