@@ -67,6 +67,18 @@
         "hy": "2017 թ. խորհրդարանական ընտրություններ",
         "fr": "Élections législatives de 2017"
       }
+    },
+    {
+      "id": "2012",
+      "dir": "data/2012",
+      "type": "parliamentary",
+      "date": "2012-05-06",
+      "status": "available",
+      "name": {
+        "en": "2012 parliamentary election",
+        "hy": "2012 թ. խորհրդարանական ընտրություններ",
+        "fr": "Élections législatives de 2012"
+      }
     }
   ]
 }

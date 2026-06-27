@@ -5,6 +5,29 @@ All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] — 2026-06-26
+
+### Added
+
+- **2012 parliamentary election** (6 May 2012) added to the portal — the earliest
+  and only **pre-reform, mixed-system** vote covered so far (90 proportional seats
+  + 41 single-member majoritarian = 131). The atlas maps the **proportional ballot**
+  (9 forces) and reports each force's **total** seats (proportional + majoritarian).
+  - Republican Party of Armenia topped the proportional vote with 44.1 % and, with
+    its district wins, 69 of 131 seats; Prosperous Armenia followed (30.2 %, 37) and
+    carried Kotayk. The ANC (7.1 %, 7), Heritage (5.8 %, 5), ARF–Dashnaktsutyun
+    (5.7 %, 5) and Rule of Law (5.5 %, 6) also entered parliament.
+  - Re-aggregated to the modern consolidated communities (`consolidate_from: 2026`).
+  - 100 % geocoding: 81/81 communities and 925/925 settlements located, with
+    trilingual party profiles and Wikipedia/Wikidata cross-references.
+
+### Changed
+
+- The data pipeline now tolerates the older CEC workbook layout: per-election
+  administrative-column offsets (`col_registered` / `col_participants` /
+  `col_invalid`) and polling-station codes normalised on both sides of the join
+  (the 2012 results zero-pad `1/01` while its registry uses `1/1`).
+
 ## [1.2.0] — 2026-06-26
 
 ### Added

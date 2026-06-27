@@ -1,0 +1,717 @@
+{
+  "AM-AG": {
+    "iso": "AM-AG",
+    "name_en": "Aragatsotn",
+    "name_hy": "Արագածոտն",
+    "name_fr": "Aragatsotn",
+    "registered": 113690,
+    "ballots_cast": 78918,
+    "valid": 76026,
+    "invalid": 2177,
+    "turnout_pct": 69.42,
+    "stations": 141,
+    "winner": "republican",
+    "winner_pct": 45.946,
+    "runner_up": "prosperous_armenia",
+    "margin": 13.66,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "orinats_yerkir",
+      "anc",
+      "arf",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 34931,
+        "pct": 45.946
+      },
+      "prosperous_armenia": {
+        "votes": 24545,
+        "pct": 32.285
+      },
+      "anc": {
+        "votes": 4489,
+        "pct": 5.905
+      },
+      "orinats_yerkir": {
+        "votes": 4819,
+        "pct": 6.339
+      },
+      "heritage": {
+        "votes": 2259,
+        "pct": 2.971
+      },
+      "arf": {
+        "votes": 4112,
+        "pct": 5.409
+      },
+      "communist": {
+        "votes": 579,
+        "pct": 0.762
+      },
+      "democratic_party": {
+        "votes": 190,
+        "pct": 0.25
+      },
+      "united_armenians": {
+        "votes": 102,
+        "pct": 0.134
+      }
+    }
+  },
+  "AM-AR": {
+    "iso": "AM-AR",
+    "name_en": "Ararat",
+    "name_hy": "Արարատ",
+    "name_fr": "Ararat",
+    "registered": 212317,
+    "ballots_cast": 149389,
+    "valid": 143166,
+    "invalid": 4955,
+    "turnout_pct": 70.36,
+    "stations": 152,
+    "winner": "republican",
+    "winner_pct": 53.507,
+    "runner_up": "prosperous_armenia",
+    "margin": 23.62,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "arf",
+      "orinats_yerkir",
+      "anc",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 76604,
+        "pct": 53.507
+      },
+      "prosperous_armenia": {
+        "votes": 42791,
+        "pct": 29.889
+      },
+      "anc": {
+        "votes": 5120,
+        "pct": 3.576
+      },
+      "orinats_yerkir": {
+        "votes": 6565,
+        "pct": 4.586
+      },
+      "heritage": {
+        "votes": 3809,
+        "pct": 2.661
+      },
+      "arf": {
+        "votes": 6903,
+        "pct": 4.822
+      },
+      "communist": {
+        "votes": 928,
+        "pct": 0.648
+      },
+      "democratic_party": {
+        "votes": 293,
+        "pct": 0.205
+      },
+      "united_armenians": {
+        "votes": 153,
+        "pct": 0.107
+      }
+    }
+  },
+  "AM-AV": {
+    "iso": "AM-AV",
+    "name_en": "Armavir",
+    "name_hy": "Արմավիր",
+    "name_fr": "Armavir",
+    "registered": 222641,
+    "ballots_cast": 125092,
+    "valid": 119677,
+    "invalid": 4401,
+    "turnout_pct": 56.19,
+    "stations": 165,
+    "winner": "republican",
+    "winner_pct": 47.995,
+    "runner_up": "prosperous_armenia",
+    "margin": 22.44,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "orinats_yerkir",
+      "heritage",
+      "arf",
+      "anc",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 57439,
+        "pct": 47.995
+      },
+      "prosperous_armenia": {
+        "votes": 30588,
+        "pct": 25.559
+      },
+      "anc": {
+        "votes": 6821,
+        "pct": 5.7
+      },
+      "orinats_yerkir": {
+        "votes": 7729,
+        "pct": 6.458
+      },
+      "heritage": {
+        "votes": 7592,
+        "pct": 6.344
+      },
+      "arf": {
+        "votes": 7381,
+        "pct": 6.167
+      },
+      "communist": {
+        "votes": 1409,
+        "pct": 1.177
+      },
+      "democratic_party": {
+        "votes": 411,
+        "pct": 0.343
+      },
+      "united_armenians": {
+        "votes": 307,
+        "pct": 0.257
+      }
+    }
+  },
+  "AM-GR": {
+    "iso": "AM-GR",
+    "name_en": "Gegharkunik",
+    "name_hy": "Գեղարքունիք",
+    "name_fr": "Guégharkounik",
+    "registered": 185981,
+    "ballots_cast": 122785,
+    "valid": 118517,
+    "invalid": 3201,
+    "turnout_pct": 66.02,
+    "stations": 153,
+    "winner": "republican",
+    "winner_pct": 46.749,
+    "runner_up": "prosperous_armenia",
+    "margin": 13.16,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "orinats_yerkir",
+      "arf",
+      "anc",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 55405,
+        "pct": 46.749
+      },
+      "prosperous_armenia": {
+        "votes": 39808,
+        "pct": 33.588
+      },
+      "anc": {
+        "votes": 4307,
+        "pct": 3.634
+      },
+      "orinats_yerkir": {
+        "votes": 8053,
+        "pct": 6.795
+      },
+      "heritage": {
+        "votes": 1877,
+        "pct": 1.584
+      },
+      "arf": {
+        "votes": 7907,
+        "pct": 6.672
+      },
+      "communist": {
+        "votes": 779,
+        "pct": 0.657
+      },
+      "democratic_party": {
+        "votes": 218,
+        "pct": 0.184
+      },
+      "united_armenians": {
+        "votes": 163,
+        "pct": 0.138
+      }
+    }
+  },
+  "AM-KT": {
+    "iso": "AM-KT",
+    "name_en": "Kotayk",
+    "name_hy": "Կոտայք",
+    "name_fr": "Kotayk",
+    "registered": 231710,
+    "ballots_cast": 150453,
+    "valid": 145082,
+    "invalid": 4271,
+    "turnout_pct": 64.93,
+    "stations": 163,
+    "winner": "prosperous_armenia",
+    "winner_pct": 47.493,
+    "runner_up": "republican",
+    "margin": 12.65,
+    "order": [
+      "prosperous_armenia",
+      "republican",
+      "anc",
+      "arf",
+      "heritage",
+      "orinats_yerkir",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 50555,
+        "pct": 34.846
+      },
+      "prosperous_armenia": {
+        "votes": 68904,
+        "pct": 47.493
+      },
+      "anc": {
+        "votes": 9108,
+        "pct": 6.278
+      },
+      "orinats_yerkir": {
+        "votes": 3862,
+        "pct": 2.662
+      },
+      "heritage": {
+        "votes": 4248,
+        "pct": 2.928
+      },
+      "arf": {
+        "votes": 6860,
+        "pct": 4.728
+      },
+      "communist": {
+        "votes": 1111,
+        "pct": 0.766
+      },
+      "democratic_party": {
+        "votes": 307,
+        "pct": 0.212
+      },
+      "united_armenians": {
+        "votes": 127,
+        "pct": 0.088
+      }
+    }
+  },
+  "AM-LO": {
+    "iso": "AM-LO",
+    "name_en": "Lori",
+    "name_hy": "Լոռի",
+    "name_fr": "Lorri",
+    "registered": 236441,
+    "ballots_cast": 140006,
+    "valid": 133743,
+    "invalid": 4805,
+    "turnout_pct": 59.21,
+    "stations": 221,
+    "winner": "republican",
+    "winner_pct": 52.036,
+    "runner_up": "prosperous_armenia",
+    "margin": 27.77,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "orinats_yerkir",
+      "arf",
+      "anc",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 69594,
+        "pct": 52.036
+      },
+      "prosperous_armenia": {
+        "votes": 32458,
+        "pct": 24.269
+      },
+      "anc": {
+        "votes": 7168,
+        "pct": 5.36
+      },
+      "orinats_yerkir": {
+        "votes": 8985,
+        "pct": 6.718
+      },
+      "heritage": {
+        "votes": 6130,
+        "pct": 4.583
+      },
+      "arf": {
+        "votes": 7236,
+        "pct": 5.41
+      },
+      "communist": {
+        "votes": 1408,
+        "pct": 1.053
+      },
+      "democratic_party": {
+        "votes": 442,
+        "pct": 0.33
+      },
+      "united_armenians": {
+        "votes": 322,
+        "pct": 0.241
+      }
+    }
+  },
+  "AM-SH": {
+    "iso": "AM-SH",
+    "name_en": "Shirak",
+    "name_hy": "Շիրակ",
+    "name_fr": "Chirak",
+    "registered": 228732,
+    "ballots_cast": 131644,
+    "valid": 126330,
+    "invalid": 4465,
+    "turnout_pct": 57.55,
+    "stations": 217,
+    "winner": "republican",
+    "winner_pct": 36.512,
+    "runner_up": "prosperous_armenia",
+    "margin": 1.96,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "heritage",
+      "orinats_yerkir",
+      "anc",
+      "arf",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 46126,
+        "pct": 36.512
+      },
+      "prosperous_armenia": {
+        "votes": 43644,
+        "pct": 34.548
+      },
+      "anc": {
+        "votes": 8239,
+        "pct": 6.522
+      },
+      "orinats_yerkir": {
+        "votes": 9240,
+        "pct": 7.314
+      },
+      "heritage": {
+        "votes": 10732,
+        "pct": 8.495
+      },
+      "arf": {
+        "votes": 5976,
+        "pct": 4.73
+      },
+      "communist": {
+        "votes": 1723,
+        "pct": 1.364
+      },
+      "democratic_party": {
+        "votes": 398,
+        "pct": 0.315
+      },
+      "united_armenians": {
+        "votes": 252,
+        "pct": 0.199
+      }
+    }
+  },
+  "AM-SU": {
+    "iso": "AM-SU",
+    "name_en": "Syunik",
+    "name_hy": "Սյունիք",
+    "name_fr": "Syunik",
+    "registered": 121433,
+    "ballots_cast": 87892,
+    "valid": 84910,
+    "invalid": 2323,
+    "turnout_pct": 72.38,
+    "stations": 153,
+    "winner": "republican",
+    "winner_pct": 61.125,
+    "runner_up": "prosperous_armenia",
+    "margin": 38.69,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "arf",
+      "anc",
+      "orinats_yerkir",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 51901,
+        "pct": 61.125
+      },
+      "prosperous_armenia": {
+        "votes": 19053,
+        "pct": 22.439
+      },
+      "anc": {
+        "votes": 3343,
+        "pct": 3.937
+      },
+      "orinats_yerkir": {
+        "votes": 2862,
+        "pct": 3.371
+      },
+      "heritage": {
+        "votes": 2132,
+        "pct": 2.511
+      },
+      "arf": {
+        "votes": 4442,
+        "pct": 5.231
+      },
+      "communist": {
+        "votes": 833,
+        "pct": 0.981
+      },
+      "democratic_party": {
+        "votes": 224,
+        "pct": 0.264
+      },
+      "united_armenians": {
+        "votes": 120,
+        "pct": 0.141
+      }
+    }
+  },
+  "AM-TV": {
+    "iso": "AM-TV",
+    "name_en": "Tavush",
+    "name_hy": "Տավուշ",
+    "name_fr": "Tavouch",
+    "registered": 108324,
+    "ballots_cast": 71668,
+    "valid": 68690,
+    "invalid": 2096,
+    "turnout_pct": 66.16,
+    "stations": 95,
+    "winner": "republican",
+    "winner_pct": 49.868,
+    "runner_up": "prosperous_armenia",
+    "margin": 22.96,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "orinats_yerkir",
+      "arf",
+      "anc",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 34254,
+        "pct": 49.868
+      },
+      "prosperous_armenia": {
+        "votes": 18482,
+        "pct": 26.906
+      },
+      "anc": {
+        "votes": 3729,
+        "pct": 5.429
+      },
+      "orinats_yerkir": {
+        "votes": 4823,
+        "pct": 7.021
+      },
+      "heritage": {
+        "votes": 2088,
+        "pct": 3.04
+      },
+      "arf": {
+        "votes": 4265,
+        "pct": 6.209
+      },
+      "communist": {
+        "votes": 699,
+        "pct": 1.018
+      },
+      "democratic_party": {
+        "votes": 200,
+        "pct": 0.291
+      },
+      "united_armenians": {
+        "votes": 150,
+        "pct": 0.218
+      }
+    }
+  },
+  "AM-VD": {
+    "iso": "AM-VD",
+    "name_en": "Vayots Dzor",
+    "name_hy": "Վայոց ձոր",
+    "name_fr": "Vayots Dzor",
+    "registered": 47412,
+    "ballots_cast": 31748,
+    "valid": 30711,
+    "invalid": 822,
+    "turnout_pct": 66.96,
+    "stations": 54,
+    "winner": "republican",
+    "winner_pct": 48.188,
+    "runner_up": "prosperous_armenia",
+    "margin": 16.34,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "arf",
+      "orinats_yerkir",
+      "anc",
+      "heritage",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 14799,
+        "pct": 48.188
+      },
+      "prosperous_armenia": {
+        "votes": 9780,
+        "pct": 31.845
+      },
+      "anc": {
+        "votes": 993,
+        "pct": 3.233
+      },
+      "orinats_yerkir": {
+        "votes": 1881,
+        "pct": 6.125
+      },
+      "heritage": {
+        "votes": 749,
+        "pct": 2.439
+      },
+      "arf": {
+        "votes": 2106,
+        "pct": 6.857
+      },
+      "communist": {
+        "votes": 281,
+        "pct": 0.915
+      },
+      "democratic_party": {
+        "votes": 83,
+        "pct": 0.27
+      },
+      "united_armenians": {
+        "votes": 39,
+        "pct": 0.127
+      }
+    }
+  },
+  "AM-ER": {
+    "iso": "AM-ER",
+    "name_en": "Yerevan",
+    "name_hy": "Երևան",
+    "name_fr": "Erevan",
+    "registered": 814225,
+    "ballots_cast": 483263,
+    "valid": 459065,
+    "invalid": 20311,
+    "turnout_pct": 59.35,
+    "stations": 468,
+    "winner": "republican",
+    "winner_pct": 37.611,
+    "runner_up": "prosperous_armenia",
+    "margin": 10.46,
+    "order": [
+      "republican",
+      "prosperous_armenia",
+      "anc",
+      "heritage",
+      "arf",
+      "orinats_yerkir",
+      "communist",
+      "democratic_party",
+      "united_armenians"
+    ],
+    "shares": {
+      "republican": {
+        "votes": 172658,
+        "pct": 37.611
+      },
+      "prosperous_armenia": {
+        "votes": 124618,
+        "pct": 27.146
+      },
+      "anc": {
+        "votes": 53584,
+        "pct": 11.672
+      },
+      "orinats_yerkir": {
+        "votes": 24304,
+        "pct": 5.294
+      },
+      "heritage": {
+        "votes": 45377,
+        "pct": 9.885
+      },
+      "arf": {
+        "votes": 28356,
+        "pct": 6.177
+      },
+      "communist": {
+        "votes": 6149,
+        "pct": 1.339
+      },
+      "democratic_party": {
+        "votes": 2810,
+        "pct": 0.612
+      },
+      "united_armenians": {
+        "votes": 1209,
+        "pct": 0.263
+      }
+    }
+  }
+}

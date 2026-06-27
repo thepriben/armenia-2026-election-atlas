@@ -5,14 +5,17 @@ elections — built to be explored and shared by link, not just read.
 
 A **portal** designed to grow into a multi-election archive: pick an election from the
 switcher in the header and the whole site re-renders for that vote. **It currently covers
-the 2017, 2018, 2021 and 2026 parliamentary elections**; earlier votes are planned and
-appear as *coming soon* until their data lands.
+the 2012, 2017, 2018, 2021 and 2026 parliamentary elections**; earlier votes are planned
+and appear as *coming soon* until their data lands.
 
-The 2017 vote returned the long-governing **Republican Party of Armenia**; the 2018 Velvet
-Revolution then reshaped politics, and from the December 2018 snap election onward
-**Nikol Pashinyan's** forces — My Step, then **Civil Contract** — won outright majorities
-and carried **all eleven provinces**. The atlas focuses on the geography of each result:
-the margin of victory and the party scores, province by province and community by community.
+The **2012** vote — held under the old **mixed system** (proportional + majoritarian) —
+returned the long-governing **Republican Party of Armenia**, which also won in 2017. The
+2018 Velvet Revolution then reshaped politics, and from the December 2018 snap election
+onward **Nikol Pashinyan's** forces — My Step, then **Civil Contract** — won outright
+majorities and carried **all eleven provinces**. The atlas focuses on the geography of each
+result: the margin of victory and the party scores, province by province and community by
+community. For 2012 it maps the **proportional ballot** and reports each force's total
+(proportional + majoritarian) seats.
 
 **Live site:** <https://hayntrutyun.info/> · mirror: `https://thepriben.github.io/armenia-election-atlas/`
 
@@ -29,14 +32,14 @@ the margin of victory and the party scores, province by province and community b
 - **Parties** — neutral, trilingual profiles cross-referenced to **Wikidata** + Wikipedia.
 - **Data** — sortable tables and downloads (**Parquet** / CSV / GeoJSON), derived from the
   official CEC workbooks (2026: 2,005 stations, 18 forces; 2021: 2,008 stations, 25 forces;
-  2018: 2,010 stations, 11 forces; 2017: 2,009 stations, 9 forces — all re-aggregated to the
-  same 81 consolidated communities).
+  2018: 2,010 stations, 11 forces; 2017: 2,009 stations, 9 forces; 2012: 1,982 stations,
+  9 forces — all re-aggregated to the same 81 consolidated communities).
 
 ## Single source of truth
 
 All results come from the **Central Electoral Commission of Armenia** (`elections.am`):
 
-| File | Source (`electionId`: 2026 = `28826`, 2021 = `27697`, 2018 = `27576`, 2017 = `27339`) |
+| File | Source (`electionId`: 2026 = `28826`, 2021 = `27697`, 2018 = `27576`, 2017 = `27339`, 2012 = `24104`) |
 |---|---|
 | Results by polling station | `https://www.elections.am/File/ElectionResult?electionId=<id>` |
 | Polling-station registry (marz / community) | `https://www.elections.am/File/SubDistrictsToExcel?electionId=<id>` |
@@ -75,12 +78,13 @@ data/
     clean/  stations.{parquet,csv}  communities.{parquet,csv}  marz.{parquet,csv}
     raw/    original CEC workbooks
   2021/                       # same structure as 2026/
+  2018/  2017/  2012/         # same structure as 2026/
 ```
 
 `data/elections.json` lists every election, its `date`, trilingual `name`, and
 `status` (`available` or `upcoming`). The header switcher and the site's default
-election are driven entirely by this file. **Both `2021` and `2026` are `available`;
-`2026` is the default.**
+election are driven entirely by this file. **`2012`, `2017`, `2018`, `2021` and `2026`
+are all `available`; `2026` is the default.**
 
 ## Add an election
 
@@ -89,7 +93,9 @@ election are driven entirely by this file. **Both `2021` and `2026` are `availab
 2. Add a config block for the year to the `ELECTIONS` dict in `scripts/build_data.py`:
    the ballot (party) **column indices** from the results workbook, trilingual party
    metadata, thresholds, seat allocation and `election_id`. Add the matching party/leader
-   Wikipedia titles to `TITLES_BY_ELECTION` in `scripts/enrich_links.py`.
+   Wikipedia titles to `TITLES_BY_ELECTION` in `scripts/enrich_links.py`. Older workbooks
+   (e.g. 2012) may shift the administrative columns — override `col_registered`,
+   `col_participants` and `col_invalid` in the config block when they do.
 3. Generate the per-election dataset (everything lands under `data/<year>/`):
 
    ```bash

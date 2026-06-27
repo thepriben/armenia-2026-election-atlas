@@ -20,6 +20,12 @@ const LEADER_LINK = {
   // 2018 parties (others reuse keys above)
   my_step: "leader_pashinyan", we_alliance: "leader_aram_sargsyan",
   orinats_yerkir: "leader_baghdasaryan",
+  // 2012 parties (republican/prosperous_armenia/anc/orinats_yerkir reuse keys above)
+  heritage: "leader_hovannisian",
+};
+// Per-election overrides where the same party id had a different leader that year.
+const LEADER_LINK_BY_ELECTION = {
+  "2012": { arf: "leader_hovhannisyan" },  // Vahan Hovhannisyan led ARF in 2012
 };
 
 let core, mapApi, communities = null, electionId, electionList = [];
@@ -409,7 +415,8 @@ function renderPartyDetail(pid) {
     refs.push(`<a href="${w.url}" target="_blank" rel="noopener">Wikipedia ↗</a>`);
   }
   if (pl?.wikidata) refs.push(`<a href="${pl.wikidata}" target="_blank" rel="noopener">Wikidata · ${pl.qid}</a>`);
-  const ll = core.links[LEADER_LINK[p.id]];
+  const llKey = LEADER_LINK_BY_ELECTION[electionId]?.[p.id] || LEADER_LINK[p.id];
+  const ll = core.links[llKey];
   if (p.leader && (ll?.wikipedia?.[lang] || ll?.wikipedia?.en)) {
     const w = ll.wikipedia[lang] || ll.wikipedia.en;
     refs.push(`<a href="${w.url}" target="_blank" rel="noopener">${p.leader} ↗</a>`);

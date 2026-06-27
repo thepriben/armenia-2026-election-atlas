@@ -141,6 +141,27 @@ TITLES_BY_ELECTION = {
         "leader_aram_sargsyan": "Aram Sargsyan",
         "leader_baghdasaryan": "Artur Baghdasaryan",
     },
+    "2012": {
+        # the election
+        "election": "2012 Armenian parliamentary election",
+        # parties / alliances (only those with reliable EN articles)
+        "republican": "Republican Party of Armenia",
+        "prosperous_armenia": "Prosperous Armenia",
+        "anc": "Armenian National Congress",
+        "orinats_yerkir": "Orinats Yerkir",
+        "heritage": "Heritage (Armenia)",
+        "arf": "Armenian Revolutionary Federation",
+        "communist": "Communist Party of Armenia",
+        "democratic_party": "Democratic Party of Armenia",
+        "united_armenians": "Unified Armenians Party",
+        # leaders
+        "leader_serzh_sargsyan": "Serzh Sargsyan",
+        "leader_tsarukyan": "Gagik Tsarukyan",
+        "leader_ter_petrosyan": "Levon Ter-Petrosyan",
+        "leader_baghdasaryan": "Artur Baghdasaryan",
+        "leader_hovannisian": "Raffi Hovannisian",
+        "leader_hovhannisyan": "Vahan Hovhannisyan",
+    },
 }
 
 if ELECTION not in TITLES_BY_ELECTION:

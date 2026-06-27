@@ -1,0 +1,49 @@
+{
+  "profiles": {
+    "republican": {
+      "en": "The governing party of President Serzh Sargsyan, dominant across the country. It topped the proportional ballot with 44.1% and, adding its majoritarian-district wins, took 69 of the 131 seats — an outright majority that kept Prime Minister Tigran Sargsyan in office.",
+      "hy": "Նախագահ Սերժ Սարգսյանի իշխող կուսակցությունը՝ գերիշխող ողջ երկրում։ Համամասնական քվեարկությունում առաջատար՝ 44,1 %, իսկ մեծամասնական ընտրատարածքների մանդատների հետ՝ 131-ից 69 տեղ՝ բացարձակ մեծամասնություն, որը պահպանեց վարչապետ Տիգրան Սարգսյանին։",
+      "fr": "Le parti au pouvoir du président Serge Sargsian, dominant dans tout le pays. En tête du scrutin proportionnel avec 44,1 %, il obtient, avec ses circonscriptions majoritaires, 69 des 131 sièges — une majorité absolue qui maintient le Premier ministre Tigran Sargsian."
+    },
+    "prosperous_armenia": {
+      "en": "The party of business magnate Gagik Tsarukyan, which had left the governing coalition and ran as the main alternative. It finished a strong second with 30.2% and 37 seats, winning Kotayk province.",
+      "hy": "Գործարար Գագիկ Ծառուկյանի կուսակցությունը, որը դուրս էր եկել իշխող կոալիցիայից և հանդես եկավ որպես գլխավոր այլընտրանք։ Վստահ երկրորդ տեղ՝ 30,2 % և 37 մանդատ՝ հաղթելով Կոտայքի մարզում։",
+      "fr": "Le parti du magnat des affaires Gagik Tsaroukian, qui avait quitté la coalition au pouvoir et se présentait en principale alternative. Solide deuxième avec 30,2 % et 37 sièges, il l’emporte dans la province de Kotayk."
+    },
+    "anc": {
+      "en": "The Armenian National Congress, the opposition alliance of former president Levon Ter-Petrosyan. It cleared the alliance threshold with 7.1% and took 7 seats.",
+      "hy": "Հայ ազգային կոնգրեսը՝ նախկին նախագահ Լևոն Տեր-Պետրոսյանի ընդդիմադիր դաշինքը։ Հաղթահարեց դաշինքների շեմը՝ 7,1 % և 7 մանդատ։",
+      "fr": "Le Congrès national arménien, l’alliance d’opposition de l’ancien président Levon Ter-Petrossian. Il franchit le seuil des alliances avec 7,1 % et obtient 7 sièges."
+    },
+    "heritage": {
+      "en": "The liberal, pro-Western Heritage party of Raffi Hovannisian, running in partnership with Free Democrats. It cleared the threshold with 5.8% and 5 seats.",
+      "hy": "Ռաֆֆի Հովհաննիսյանի լիբերալ, արևմտամետ «Ժառանգություն» կուսակցությունը՝ Ազատ դեմոկրատների հետ համատեղ։ Հաղթահարեց շեմը՝ 5,8 % և 5 մանդատ։",
+      "fr": "Le parti libéral et pro-occidental Héritage de Raffi Hovannisian, en partenariat avec les Démocrates libres. Il franchit le seuil avec 5,8 % et 5 sièges."
+    },
+    "arf": {
+      "en": "The historic Armenian Revolutionary Federation (Dashnaktsutyun), led into the election by Vahan Hovhannisyan. It cleared the threshold with 5.7% and 5 seats.",
+      "hy": "Պատմական «Հայ յեղափոխական դաշնակցությունը», որն ընտրություններ մտավ Վահան Հովհաննիսյանի գլխավորությամբ։ Հաղթահարեց շեմը՝ 5,7 % և 5 մանդատ։",
+      "fr": "L’historique Fédération révolutionnaire arménienne (Dachnaktsoutioun), conduite à l’élection par Vahan Hovhannisian. Elle franchit le seuil avec 5,7 % et 5 sièges."
+    },
+    "orinats_yerkir": {
+      "en": "The Rule of Law party (Orinats Yerkir) of Artur Baghdasaryan, junior partner in the governing coalition. It cleared the threshold with 5.5% and took 6 seats.",
+      "hy": "Արթուր Բաղդասարյանի «Օրինաց երկիր» կուսակցությունը՝ իշխող կոալիցիայի կրտսեր գործընկերը։ Հաղթահարեց շեմը՝ 5,5 % և 6 մանդատ։",
+      "fr": "Le parti État de droit (Orinats Yerkir) d’Artour Baghdassarian, partenaire junior de la coalition au pouvoir. Il franchit le seuil avec 5,5 % et obtient 6 sièges."
+    },
+    "communist": {
+      "en": "The Communist Party of Armenia, a marginal force well below the 5% threshold with 1.1%.",
+      "hy": "Հայաստանի կոմունիստական կուսակցությունը՝ մարգինալ ուժ՝ 5 % շեմից բավական ցածր՝ 1,1 %։",
+      "fr": "Le Parti communiste d’Arménie, force marginale nettement sous le seuil de 5 %, avec 1,1 %."
+    },
+    "democratic_party": {
+      "en": "The Democratic Party of Armenia, a minor force far below the threshold with 0.4%.",
+      "hy": "Հայաստանի դեմոկրատական կուսակցությունը՝ փոքր ուժ՝ շեմից շատ ցածր՝ 0,4 %։",
+      "fr": "Le Parti démocrate d’Arménie, force mineure très en deçà du seuil, avec 0,4 %."
+    },
+    "united_armenians": {
+      "en": "The United Armenians party, the smallest contender on the proportional ballot with 0.2%.",
+      "hy": "«Միավորված հայեր» կուսակցությունը՝ համամասնական քվեարկության ամենափոքր մասնակիցը՝ 0,2 %։",
+      "fr": "Le parti des Arméniens unis, plus petit concurrent du scrutin proportionnel, avec 0,2 %."
+    }
+  }
+}

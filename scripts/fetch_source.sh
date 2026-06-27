@@ -14,6 +14,7 @@ case "$ELECTION" in
   2021) EID=27697 ;;  # early election, 20 June 2021
   2018) EID=27576 ;;  # snap election, 9 December 2018
   2017) EID=27339 ;;  # ordinary election, 2 April 2017
+  2012) EID=24104 ;;  # ordinary election (proportional ballot), 6 May 2012
   *) echo "Unknown ELECTION=$ELECTION; add its electionId to scripts/fetch_source.sh" >&2; exit 1 ;;
 esac
 BASE="https://www.elections.am/File"

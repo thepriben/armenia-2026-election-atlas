@@ -42,12 +42,14 @@ RESULTS_XLSX = RAW / "cec_results_by_station.xlsx"
 REGISTRY_XLSX = RAW / "cec_subdistricts.xlsx"
 
 # --- Administrative columns in the results workbook (0-indexed) ---
-# These are identical across the CEC results workbooks (2017–2026).
+# TEC / station are stable; the registered/participants/invalid offsets shift in
+# the older (pre-2017) workbooks, so they are overridable per election below.
 COL_TEC = 0           # Territorial Electoral Commission number
 COL_STATION = 1       # Polling station code, e.g. "1/1"
-COL_REGISTERED = 5    # Total number of voters (registered)
-COL_PARTICIPANTS = 6  # Total number of participants (ballots cast)
-COL_INVALID = 14      # Invalid ballots
+# Defaults match the 2017–2026 layout; 2012 overrides them (one fewer admin column).
+DEFAULT_COL_REGISTERED = 5    # "Ընտրողների ընդհանուր թիվը" (total electors)
+DEFAULT_COL_PARTICIPANTS = 6  # total participants (ballots cast)
+DEFAULT_COL_INVALID = 14      # invalid ballots
 
 # ---------------------------------------------------------------------------
 # Per-election configuration. Ballot (party) columns and metadata differ by
@@ -304,6 +306,56 @@ ELECTIONS = {
              "ԱԱ / NP", None, "below-threshold", "nationalist", "#588157"),
         ],
     },
+    "2012": {
+        "election": "National Assembly of Armenia — ordinary election (proportional ballot), 6 May 2012",
+        "date": "2012-05-06",
+        "election_id": 24104,
+        "threshold_party_pct": 5.0,
+        "threshold_alliance_pct": 7.0,
+        # The 2012 assembly had 131 seats under a mixed system: 90 proportional +
+        # 41 single-member majoritarian. The atlas maps the proportional ballot;
+        # the "seats" below are each force's total (proportional + majoritarian).
+        "total_seats": 131,
+        # The 2012 proportional workbook has one fewer administrative column.
+        "col_registered": 4,
+        "col_participants": 5,
+        "col_invalid": 13,
+        "col_inaccuracy": 23,
+        # Pre-reform communities (~900). Re-aggregate to the modern consolidated
+        # municipalities so the community level matches the other years.
+        "consolidate_from": "2026",
+        "seats": {"republican": 69, "prosperous_armenia": 37, "anc": 7,
+                  "orinats_yerkir": 6, "heritage": 5, "arf": 5},
+        "parties": [
+            (20, "republican", "party",
+             "Հայաստանի Հանրապետական կուսակցություն", "Republican Party of Armenia", "Parti républicain d’Arménie",
+             "ՀՀԿ / RPA", "Serzh Sargsyan", "government", "national-conservative", "#2D5DA1"),
+            (14, "prosperous_armenia", "party",
+             "«Բարգավաճ Հայաստան» կուսակցություն", "Prosperous Armenia", "Arménie prospère",
+             "ԲՀԿ / PA", "Gagik Tsarukyan", "opposition", "centrist-populist", "#E8A300"),
+            (16, "anc", "alliance",
+             "«Հայ ազգային կոնգրես» կուսակցությունների դաշինք", "Armenian National Congress", "Congrès national arménien",
+             "ՀԱԿ / ANC", "Levon Ter-Petrosyan", "opposition", "liberal-democratic", "#577590"),
+            (22, "orinats_yerkir", "party",
+             "«Օրինաց երկիր» կուսակցություն", "Orinats Yerkir (Rule of Law)", "Orinats Yerkir (État de droit)",
+             "ՕԵ / RoL", "Artur Baghdasaryan", "government", "conservative", "#48BFE3"),
+            (15, "heritage", "party",
+             "«Ժառանգություն» կուսակցություն", "Heritage", "Héritage",
+             "Ժառ / Her", "Raffi Hovannisian", "opposition", "liberal", "#6A2E8F"),
+            (17, "arf", "party",
+             "«Հայ յեղափոխական դաշնակցություն» կուսակցություն", "Armenian Revolutionary Federation (Dashnaktsutyun)", "Fédération révolutionnaire arménienne (Dachnaktsoutioun)",
+             "ՀՅԴ / ARF", "Vahan Hovhannisyan", "opposition", "socialist-nationalist", "#C8102E"),
+            (19, "communist", "party",
+             "Հայաստանի կոմունիստական կուսակցություն", "Communist Party of Armenia", "Parti communiste d’Arménie",
+             "ՀԿԿ / CPA", None, "below-threshold", "communist", "#8A1C1C"),
+            (18, "democratic_party", "party",
+             "Հայաստանի դեմոկրատական կուսակցություն", "Democratic Party of Armenia", "Parti démocrate d’Arménie",
+             "ՀԴԿ / DPA", None, "below-threshold", "social-democratic", "#468FAF"),
+            (21, "united_armenians", "party",
+             "«Միավորված հայեր» կուսակցություն", "United Armenians", "Arméniens unis",
+             "ՄՀ / UA", None, "below-threshold", "nationalist", "#8D6E63"),
+        ],
+    },
 }
 
 if ELECTION not in ELECTIONS:
@@ -311,6 +363,9 @@ if ELECTION not in ELECTIONS:
 CFG = ELECTIONS[ELECTION]
 
 COL_INACCURACY = CFG["col_inaccuracy"]
+COL_REGISTERED = CFG.get("col_registered", DEFAULT_COL_REGISTERED)
+COL_PARTICIPANTS = CFG.get("col_participants", DEFAULT_COL_PARTICIPANTS)
+COL_INVALID = CFG.get("col_invalid", DEFAULT_COL_INVALID)
 PARTIES = CFG["parties"]
 SOURCE = {
     "results_by_station": f"https://www.elections.am/File/ElectionResult?electionId={CFG['election_id']}",
@@ -390,6 +445,17 @@ def load_consolidation_map(source_election: str) -> dict:
     return m
 
 
+def _norm_station(s) -> str:
+    """Canonical polling-station code so results and registry join cleanly across
+    years. Strips leading zeros per "/"-separated part: the 2012 results pad the
+    station ("1/01") while its registry does not ("1/1"); 2017–2026 already agree,
+    and this is idempotent for them."""
+    s = str(s).strip()
+    if "/" not in s:
+        return s
+    return "/".join(str(int(p)) if p.isdigit() else p for p in s.split("/"))
+
+
 def _num(v):
     if v is None or v == "":
         return 0
@@ -409,7 +475,7 @@ def read_results() -> pd.DataFrame:
             continue  # totals / blank rows
         rec = {
             "tec": str(row[COL_TEC]).zfill(2) if row[COL_TEC] else None,
-            "station": str(station).strip(),
+            "station": _norm_station(station),
             "registered": _num(row[COL_REGISTERED]),
             "ballots_cast": _num(row[COL_PARTICIPANTS]),
             "invalid": _num(row[COL_INVALID]),
@@ -432,7 +498,7 @@ def read_registry() -> pd.DataFrame:
         if not station:
             continue
         rows.append({
-            "station": str(station).strip(),
+            "station": _norm_station(station),
             "marz_hy": (marz or "").strip(),
             "community_hy": (community or "").strip(),
             "settlement_hy": (settlement or "").strip() or None,
