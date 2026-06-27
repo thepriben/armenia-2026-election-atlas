@@ -1,0 +1,102 @@
+{
+  "generated_utc": "2026-06-27T03:59:04+00:00",
+  "source": {
+    "results_by_station": "https://www.elections.am/File/ElectionResult?electionId=27576",
+    "polling_station_registry": "https://www.elections.am/File/SubDistrictsToExcel?electionId=27576",
+    "authority": "Central Electoral Commission of the Republic of Armenia (elections.am)",
+    "election": "National Assembly of Armenia — snap election, 9 December 2018",
+    "boundaries": "geoBoundaries ARM ADM1 (CC-BY 4.0)"
+  },
+  "marzer": {
+    "AM-ER": {
+      "en": "Yerevan",
+      "fr": "Erevan",
+      "hy": "Երևան"
+    },
+    "AM-AG": {
+      "en": "Aragatsotn",
+      "fr": "Aragatsotn",
+      "hy": "Արագածոտն"
+    },
+    "AM-AR": {
+      "en": "Ararat",
+      "fr": "Ararat",
+      "hy": "Արարատ"
+    },
+    "AM-AV": {
+      "en": "Armavir",
+      "fr": "Armavir",
+      "hy": "Արմավիր"
+    },
+    "AM-GR": {
+      "en": "Gegharkunik",
+      "fr": "Guégharkounik",
+      "hy": "Գեղարքունիք"
+    },
+    "AM-LO": {
+      "en": "Lori",
+      "fr": "Lorri",
+      "hy": "Լոռի"
+    },
+    "AM-KT": {
+      "en": "Kotayk",
+      "fr": "Kotayk",
+      "hy": "Կոտայք"
+    },
+    "AM-SH": {
+      "en": "Shirak",
+      "fr": "Chirak",
+      "hy": "Շիրակ"
+    },
+    "AM-SU": {
+      "en": "Syunik",
+      "fr": "Syunik",
+      "hy": "Սյունիք"
+    },
+    "AM-VD": {
+      "en": "Vayots Dzor",
+      "fr": "Vayots Dzor",
+      "hy": "Վայոց ձոր"
+    },
+    "AM-TV": {
+      "en": "Tavush",
+      "fr": "Tavouch",
+      "hy": "Տավուշ"
+    }
+  },
+  "integrity": {
+    "stations_parsed": 2010,
+    "provinces": 11,
+    "national_valid_votes": 1255676,
+    "national_ballots_cast": 1260601,
+    "out_of_province_stations": 0,
+    "out_of_province_valid_votes": 0,
+    "seat_winner_votes": {
+      "my_step": 884471,
+      "prosperous_armenia": 103788,
+      "bright_armenia": 80022
+    }
+  },
+  "files": {
+    "stations": [
+      "data/2018/clean/stations.parquet",
+      "data/2018/clean/stations.csv"
+    ],
+    "communities": [
+      "data/2018/clean/communities.parquet",
+      "data/2018/clean/communities.csv"
+    ],
+    "settlements": [
+      "data/2018/clean/settlements.parquet",
+      "data/2018/clean/settlements.csv"
+    ],
+    "marz": [
+      "data/2018/clean/marz.parquet",
+      "data/2018/clean/marz.csv"
+    ]
+  },
+  "levels": {
+    "communities": 81,
+    "settlements": 870
+  }
+}

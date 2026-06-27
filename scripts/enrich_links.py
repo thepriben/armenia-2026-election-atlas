@@ -119,6 +119,28 @@ TITLES_BY_ELECTION = {
         "leader_baghdasaryan": "Artur Baghdasaryan",
         "leader_ohanyan": "Seyran Ohanyan",
     },
+    "2018": {
+        # the election
+        "election": "2018 Armenian parliamentary election",
+        # parties / alliances (only those with reliable EN articles)
+        "my_step": "My Step Alliance",
+        "prosperous_armenia": "Prosperous Armenia",
+        "bright_armenia": "Bright Armenia",
+        "republican": "Republican Party of Armenia",
+        "arf": "Armenian Revolutionary Federation",
+        "we_alliance": "We Alliance (Armenia)",
+        "sasna_tsrer": "Sasna Tsrer",
+        "orinats_yerkir": "Orinats Yerkir",
+        "citizens_decision": "Citizen's Decision Social Democratic Party",
+        # leaders
+        "leader_pashinyan": "Nikol Pashinyan",
+        "leader_tsarukyan": "Gagik Tsarukyan",
+        "leader_marukyan": "Edmon Marukyan",
+        "leader_serzh_sargsyan": "Serzh Sargsyan",
+        "leader_rustamyan": "Armen Rustamyan",
+        "leader_aram_sargsyan": "Aram Sargsyan",
+        "leader_baghdasaryan": "Artur Baghdasaryan",
+    },
 }
 
 if ELECTION not in TITLES_BY_ELECTION:

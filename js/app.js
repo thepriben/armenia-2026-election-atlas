@@ -17,6 +17,9 @@ const LEADER_LINK = {
   yelk: "leader_pashinyan", arf: "leader_rustamyan",
   congress_ppa: "leader_ter_petrosyan", armenian_renaissance: "leader_baghdasaryan",
   oro: "leader_ohanyan",
+  // 2018 parties (others reuse keys above)
+  my_step: "leader_pashinyan", we_alliance: "leader_aram_sargsyan",
+  orinats_yerkir: "leader_baghdasaryan",
 };
 
 let core, mapApi, communities = null, electionId, electionList = [];

@@ -1,0 +1,59 @@
+{
+  "profiles": {
+    "my_step": {
+      "en": "The alliance of Nikol Pashinyan, leader of the 2018 Velvet Revolution, built around his Civil Contract party. Campaigning to consolidate the revolution and uproot the old order, it won a landslide 70.4% and 88 seats — carrying all eleven provinces.",
+      "hy": "Նիկոլ Փաշինյանի՝ 2018 թ. թավշյա հեղափոխության առաջնորդի դաշինքը՝ ձևավորված իր «Քաղաքացիական պայմանագիր» կուսակցության շուրջ։ Հեղափոխությունն ամրապնդելու օրակարգով տարավ ջախջախիչ հաղթանակ՝ 70,4 % և 88 մանդատ՝ բոլոր տասնմեկ մարզերում։",
+      "fr": "L’alliance de Nikol Pachinian, chef de la révolution de velours de 2018, bâtie autour de son parti Contrat civil. Sur un programme d’ancrage de la révolution, elle l’emporte massivement avec 70,4 % et 88 sièges — en tête dans les onze provinces."
+    },
+    "prosperous_armenia": {
+      "en": "The party of the business tycoon Gagik Tsarukyan. The only established force to keep a substantial presence after the revolution, it finished a distant second with 8.3% and 26 seats.",
+      "hy": "Գործարար Գագիկ Ծառուկյանի կուսակցությունը։ Հեղափոխությունից հետո զգալի ներկայություն պահպանած միակ հին ուժը՝ հեռավոր երկրորդ տեղում՝ 8,3 % և 26 մանդատ։",
+      "fr": "Le parti de l’homme d’affaires Gagik Tsaroukian. Seule force établie à conserver un poids notable après la révolution, il termine loin deuxième avec 8,3 % et 26 sièges."
+    },
+    "bright_armenia": {
+      "en": "The pro-Western liberal party of Edmon Marukyan, a former Way Out partner of Pashinyan that ran separately in 2018. It cleared the threshold with 6.4% and 18 seats, becoming the smallest of three parliamentary forces.",
+      "hy": "Էդմոն Մարուքյանի արևմտամետ լիբերալ կուսակցությունը՝ Փաշինյանի նախկին «ԵԼՔ»-ի գործընկերը, որն այս անգամ առանձին մասնակցեց։ Հաղթահարեց շեմը՝ 6,4 % և 18 մանդատ՝ դառնալով խորհրդարանի երրորդ ուժը։",
+      "fr": "Le parti libéral pro-occidental d’Edmon Maroukian, ex-partenaire de Pachinian au sein de Yelk, qui se présente seul en 2018. Il franchit le seuil avec 6,4 % et 18 sièges, troisième force du parlement."
+    },
+    "republican": {
+      "en": "The party that had governed Armenia for two decades under Serzh Sargsyan, swept from power by the revolution months earlier. It collapsed to 4.7% and, for the first time, won no seats.",
+      "hy": "Սերժ Սարգսյանի օրոք երկու տասնամյակ Հայաստանը կառավարած կուսակցությունը՝ ամիսներ առաջ հեղափոխությամբ իշխանությունից հեռացված։ Փլուզվեց՝ 4,7 %, և առաջին անգամ մանդատ չստացավ։",
+      "fr": "Le parti qui avait gouverné l’Arménie pendant vingt ans sous Serge Sargsian, chassé du pouvoir par la révolution quelques mois plus tôt. Il s’effondre à 4,7 % et, pour la première fois, n’obtient aucun siège."
+    },
+    "arf": {
+      "en": "The historic Armenian Revolutionary Federation (Dashnaktsutyun), the former coalition partner of the Republicans. It fell below the 5% threshold with 3.9% and lost all its seats.",
+      "hy": "Պատմական «Հայ յեղափոխական դաշնակցությունը»՝ Հանրապետականների նախկին կոալիցիոն գործընկերը։ Մնաց 5 % շեմից ցածր՝ 3,9 %, և կորցրեց բոլոր մանդատները։",
+      "fr": "L’historique Fédération révolutionnaire arménienne (Dachnaktsoutioun), ex-partenaire de coalition des républicains. Elle passe sous le seuil de 5 % avec 3,9 % et perd tous ses sièges."
+    },
+    "we_alliance": {
+      "en": "A liberal-conservative alliance grouping the Republic party, Free Democrats and the Christian-Democratic forces. It finished below the alliance threshold.",
+      "hy": "«Հանրապետություն», Ազատ դեմոկրատներ և քրիստոնեա-դեմոկրատական ուժերը միավորող լիբերալ-պահպանողական դաշինք։ Մնաց դաշինքների շեմից ցածր։",
+      "fr": "Une alliance libérale-conservatrice réunissant le parti République, les Démocrates libres et les forces chrétiennes-démocrates. Elle reste sous le seuil des alliances."
+    },
+    "sasna_tsrer": {
+      "en": "A radical-nationalist party born of the 2016 armed seizure of a Yerevan police base. It ran on a hardline sovereigntist platform and stayed well below the threshold.",
+      "hy": "Արմատական-ազգայնական կուսակցություն՝ ծնված 2016 թ. Երևանի ոստիկանական բազայի զինված գրավումից։ Մասնակցեց կոշտ ինքնիշխանական օրակարգով և մնաց շեմից շատ ցածր։",
+      "fr": "Un parti nationaliste radical né de la prise d’assaut armée d’une base de police à Erevan en 2016. Sur une ligne souverainiste dure, il reste nettement sous le seuil."
+    },
+    "orinats_yerkir": {
+      "en": "The veteran Rule of Law party of Artur Baghdasaryan, a fixture of pre-revolution coalitions. It finished marginally with 1.0%.",
+      "hy": "Արթուր Բաղդասարյանի վետերան «Օրինաց երկիր» կուսակցությունը՝ նախահեղափոխական կոալիցիաների մշտական մասնակից։ Մարգինալ արդյունք՝ 1,0 %։",
+      "fr": "Le vétéran parti État de droit (Orinats Yerkir) d’Artour Baghdassarian, pilier des coalitions d’avant la révolution. Résultat marginal de 1,0 %."
+    },
+    "citizens_decision": {
+      "en": "A small social-democratic party. It finished below the threshold.",
+      "hy": "Փոքր սոցիալ-դեմոկրատական կուսակցություն։ Մնաց շեմից ցածր։",
+      "fr": "Un petit parti social-démocrate. Il termine sous le seuil."
+    },
+    "christian_democratic_rebirth": {
+      "en": "A minor Christian-democratic party, far below the threshold.",
+      "hy": "Փոքր քրիստոնեա-դեմոկրատական կուսակցություն՝ շեմից շատ ցածր։",
+      "fr": "Un petit parti chrétien-démocrate, très en deçà du seuil."
+    },
+    "national_progress": {
+      "en": "A marginal nationalist party, far below the threshold.",
+      "hy": "Մարգինալ ազգայնական կուսակցություն՝ շեմից շատ ցածր։",
+      "fr": "Un parti nationaliste marginal, très en deçà du seuil."
+    }
+  }
+}

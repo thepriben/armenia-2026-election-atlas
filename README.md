@@ -5,14 +5,14 @@ elections — built to be explored and shared by link, not just read.
 
 A **portal** designed to grow into a multi-election archive: pick an election from the
 switcher in the header and the whole site re-renders for that vote. **It currently covers
-the 2017, 2021 and 2026 parliamentary elections**; earlier votes are planned and appear as
-*coming soon* until their data lands.
+the 2017, 2018, 2021 and 2026 parliamentary elections**; earlier votes are planned and
+appear as *coming soon* until their data lands.
 
 The 2017 vote returned the long-governing **Republican Party of Armenia**; the 2018 Velvet
-Revolution then reshaped politics, and in both 2021 and 2026 **Civil Contract** won an
-outright majority and carried **all eleven provinces**. The atlas focuses on the geography
-of each result: the margin of victory and the party scores, province by province and
-community by community.
+Revolution then reshaped politics, and from the December 2018 snap election onward
+**Nikol Pashinyan's** forces — My Step, then **Civil Contract** — won outright majorities
+and carried **all eleven provinces**. The atlas focuses on the geography of each result:
+the margin of victory and the party scores, province by province and community by community.
 
 **Live site:** <https://hayntrutyun.info/> · mirror: `https://thepriben.github.io/armenia-election-atlas/`
 
@@ -29,13 +29,14 @@ community by community.
 - **Parties** — neutral, trilingual profiles cross-referenced to **Wikidata** + Wikipedia.
 - **Data** — sortable tables and downloads (**Parquet** / CSV / GeoJSON), derived from the
   official CEC workbooks (2026: 2,005 stations, 18 forces; 2021: 2,008 stations, 25 forces;
-  2017: 2,009 stations, 9 forces — all re-aggregated to the same 81 consolidated communities).
+  2018: 2,010 stations, 11 forces; 2017: 2,009 stations, 9 forces — all re-aggregated to the
+  same 81 consolidated communities).
 
 ## Single source of truth
 
 All results come from the **Central Electoral Commission of Armenia** (`elections.am`):
 
-| File | Source (`electionId`: 2026 = `28826`, 2021 = `27697`, 2017 = `27339`) |
+| File | Source (`electionId`: 2026 = `28826`, 2021 = `27697`, 2018 = `27576`, 2017 = `27339`) |
 |---|---|
 | Results by polling station | `https://www.elections.am/File/ElectionResult?electionId=<id>` |
 | Polling-station registry (marz / community) | `https://www.elections.am/File/SubDistrictsToExcel?electionId=<id>` |

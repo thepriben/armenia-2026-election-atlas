@@ -45,6 +45,18 @@
       }
     },
     {
+      "id": "2018",
+      "dir": "data/2018",
+      "type": "parliamentary",
+      "date": "2018-12-09",
+      "status": "available",
+      "name": {
+        "en": "2018 snap parliamentary election",
+        "hy": "2018 թ. արտահերթ խորհրդարանական ընտրություններ",
+        "fr": "Élections législatives anticipées de 2018"
+      }
+    },
+    {
       "id": "2017",
       "dir": "data/2017",
       "type": "parliamentary",

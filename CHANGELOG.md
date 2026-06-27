@@ -5,6 +5,22 @@ All notable changes to this project are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] — 2026-06-26
+
+### Added
+
+- **2018 snap parliamentary election** (9 December 2018) added to the portal, at the
+  same granularity and with every feature of the other views.
+  - 11 ballot forces; the three that entered the 132-seat assembly: My Step Alliance
+    (70.4 %, 88 seats), Prosperous Armenia (8.3 %, 26) and Bright Armenia (6.4 %, 18).
+    My Step carried all eleven provinces; the Republican Party that had governed for
+    two decades collapsed below the threshold and won no seats.
+  - Re-aggregated to the modern consolidated communities (`consolidate_from: 2026`).
+  - 100 % geocoding: 81/81 communities and 925/925 settlements located, with trilingual
+    party profiles and Wikipedia/Wikidata cross-references.
+  - The hemicycle and threshold copy now adapt to the 132-seat assembly automatically.
+- `scripts/fetch_source.sh` now knows the 2017 and 2018 CEC `electionId`s.
+
 ## [1.1.0] — 2026-06-26
 
 ### Added

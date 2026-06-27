@@ -12,6 +12,8 @@ mkdir -p "$RAW"
 case "$ELECTION" in
   2026) EID=28826 ;;  # ordinary election, 7 June 2026
   2021) EID=27697 ;;  # early election, 20 June 2021
+  2018) EID=27576 ;;  # snap election, 9 December 2018
+  2017) EID=27339 ;;  # ordinary election, 2 April 2017
   *) echo "Unknown ELECTION=$ELECTION; add its electionId to scripts/fetch_source.sh" >&2; exit 1 ;;
 esac
 BASE="https://www.elections.am/File"

@@ -1,0 +1,827 @@
+{
+  "AM-AG": {
+    "iso": "AM-AG",
+    "name_en": "Aragatsotn",
+    "name_hy": "Արագածոտն",
+    "name_fr": "Aragatsotn",
+    "registered": 117686,
+    "ballots_cast": 61311,
+    "valid": 61020,
+    "invalid": 279,
+    "turnout_pct": 52.1,
+    "stations": 142,
+    "winner": "my_step",
+    "winner_pct": 68.966,
+    "runner_up": "prosperous_armenia",
+    "margin": 58.77,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "bright_armenia",
+      "arf",
+      "republican",
+      "orinats_yerkir",
+      "sasna_tsrer",
+      "we_alliance",
+      "citizens_decision",
+      "christian_democratic_rebirth",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 42083,
+        "pct": 68.966
+      },
+      "prosperous_armenia": {
+        "votes": 6222,
+        "pct": 10.197
+      },
+      "bright_armenia": {
+        "votes": 4085,
+        "pct": 6.695
+      },
+      "republican": {
+        "votes": 1278,
+        "pct": 2.094
+      },
+      "arf": {
+        "votes": 3855,
+        "pct": 6.318
+      },
+      "we_alliance": {
+        "votes": 708,
+        "pct": 1.16
+      },
+      "sasna_tsrer": {
+        "votes": 883,
+        "pct": 1.447
+      },
+      "orinats_yerkir": {
+        "votes": 1108,
+        "pct": 1.816
+      },
+      "citizens_decision": {
+        "votes": 501,
+        "pct": 0.821
+      },
+      "christian_democratic_rebirth": {
+        "votes": 154,
+        "pct": 0.252
+      },
+      "national_progress": {
+        "votes": 143,
+        "pct": 0.234
+      }
+    }
+  },
+  "AM-AR": {
+    "iso": "AM-AR",
+    "name_en": "Ararat",
+    "name_hy": "Արարատ",
+    "name_fr": "Ararat",
+    "registered": 221539,
+    "ballots_cast": 112085,
+    "valid": 111719,
+    "invalid": 352,
+    "turnout_pct": 50.59,
+    "stations": 154,
+    "winner": "my_step",
+    "winner_pct": 72.596,
+    "runner_up": "prosperous_armenia",
+    "margin": 64.44,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "republican",
+      "bright_armenia",
+      "we_alliance",
+      "arf",
+      "sasna_tsrer",
+      "orinats_yerkir",
+      "citizens_decision",
+      "christian_democratic_rebirth",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 81103,
+        "pct": 72.596
+      },
+      "prosperous_armenia": {
+        "votes": 9108,
+        "pct": 8.153
+      },
+      "bright_armenia": {
+        "votes": 4368,
+        "pct": 3.91
+      },
+      "republican": {
+        "votes": 7148,
+        "pct": 6.398
+      },
+      "arf": {
+        "votes": 2737,
+        "pct": 2.45
+      },
+      "we_alliance": {
+        "votes": 2763,
+        "pct": 2.473
+      },
+      "sasna_tsrer": {
+        "votes": 1882,
+        "pct": 1.685
+      },
+      "orinats_yerkir": {
+        "votes": 1586,
+        "pct": 1.42
+      },
+      "citizens_decision": {
+        "votes": 396,
+        "pct": 0.354
+      },
+      "christian_democratic_rebirth": {
+        "votes": 367,
+        "pct": 0.329
+      },
+      "national_progress": {
+        "votes": 261,
+        "pct": 0.234
+      }
+    }
+  },
+  "AM-AV": {
+    "iso": "AM-AV",
+    "name_en": "Armavir",
+    "name_hy": "Արմավիր",
+    "name_fr": "Armavir",
+    "registered": 234353,
+    "ballots_cast": 103909,
+    "valid": 103570,
+    "invalid": 319,
+    "turnout_pct": 44.34,
+    "stations": 168,
+    "winner": "my_step",
+    "winner_pct": 67.112,
+    "runner_up": "prosperous_armenia",
+    "margin": 55.56,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "bright_armenia",
+      "arf",
+      "we_alliance",
+      "republican",
+      "sasna_tsrer",
+      "orinats_yerkir",
+      "christian_democratic_rebirth",
+      "citizens_decision",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 69508,
+        "pct": 67.112
+      },
+      "prosperous_armenia": {
+        "votes": 11963,
+        "pct": 11.551
+      },
+      "bright_armenia": {
+        "votes": 8750,
+        "pct": 8.448
+      },
+      "republican": {
+        "votes": 2655,
+        "pct": 2.563
+      },
+      "arf": {
+        "votes": 4046,
+        "pct": 3.907
+      },
+      "we_alliance": {
+        "votes": 3370,
+        "pct": 3.254
+      },
+      "sasna_tsrer": {
+        "votes": 1746,
+        "pct": 1.686
+      },
+      "orinats_yerkir": {
+        "votes": 497,
+        "pct": 0.48
+      },
+      "citizens_decision": {
+        "votes": 384,
+        "pct": 0.371
+      },
+      "christian_democratic_rebirth": {
+        "votes": 401,
+        "pct": 0.387
+      },
+      "national_progress": {
+        "votes": 250,
+        "pct": 0.241
+      }
+    }
+  },
+  "AM-GR": {
+    "iso": "AM-GR",
+    "name_en": "Gegharkunik",
+    "name_hy": "Գեղարքունիք",
+    "name_fr": "Guégharkounik",
+    "registered": 191161,
+    "ballots_cast": 96427,
+    "valid": 96147,
+    "invalid": 297,
+    "turnout_pct": 50.44,
+    "stations": 155,
+    "winner": "my_step",
+    "winner_pct": 70.747,
+    "runner_up": "prosperous_armenia",
+    "margin": 62.14,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "arf",
+      "bright_armenia",
+      "republican",
+      "we_alliance",
+      "sasna_tsrer",
+      "orinats_yerkir",
+      "national_progress",
+      "citizens_decision",
+      "christian_democratic_rebirth"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 68021,
+        "pct": 70.747
+      },
+      "prosperous_armenia": {
+        "votes": 8277,
+        "pct": 8.609
+      },
+      "bright_armenia": {
+        "votes": 4556,
+        "pct": 4.739
+      },
+      "republican": {
+        "votes": 2655,
+        "pct": 2.761
+      },
+      "arf": {
+        "votes": 6779,
+        "pct": 7.051
+      },
+      "we_alliance": {
+        "votes": 2062,
+        "pct": 2.145
+      },
+      "sasna_tsrer": {
+        "votes": 1534,
+        "pct": 1.595
+      },
+      "orinats_yerkir": {
+        "votes": 1408,
+        "pct": 1.464
+      },
+      "citizens_decision": {
+        "votes": 256,
+        "pct": 0.266
+      },
+      "christian_democratic_rebirth": {
+        "votes": 253,
+        "pct": 0.263
+      },
+      "national_progress": {
+        "votes": 346,
+        "pct": 0.36
+      }
+    }
+  },
+  "AM-KT": {
+    "iso": "AM-KT",
+    "name_en": "Kotayk",
+    "name_hy": "Կոտայք",
+    "name_fr": "Kotayk",
+    "registered": 240126,
+    "ballots_cast": 117462,
+    "valid": 117050,
+    "invalid": 404,
+    "turnout_pct": 48.92,
+    "stations": 169,
+    "winner": "my_step",
+    "winner_pct": 67.71,
+    "runner_up": "prosperous_armenia",
+    "margin": 51.24,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "arf",
+      "bright_armenia",
+      "republican",
+      "sasna_tsrer",
+      "we_alliance",
+      "christian_democratic_rebirth",
+      "national_progress",
+      "orinats_yerkir",
+      "citizens_decision"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 79254,
+        "pct": 67.71
+      },
+      "prosperous_armenia": {
+        "votes": 19275,
+        "pct": 16.467
+      },
+      "bright_armenia": {
+        "votes": 4158,
+        "pct": 3.552
+      },
+      "republican": {
+        "votes": 4144,
+        "pct": 3.54
+      },
+      "arf": {
+        "votes": 4864,
+        "pct": 4.155
+      },
+      "we_alliance": {
+        "votes": 1397,
+        "pct": 1.194
+      },
+      "sasna_tsrer": {
+        "votes": 1438,
+        "pct": 1.229
+      },
+      "orinats_yerkir": {
+        "votes": 563,
+        "pct": 0.481
+      },
+      "citizens_decision": {
+        "votes": 501,
+        "pct": 0.428
+      },
+      "christian_democratic_rebirth": {
+        "votes": 777,
+        "pct": 0.664
+      },
+      "national_progress": {
+        "votes": 679,
+        "pct": 0.58
+      }
+    }
+  },
+  "AM-LO": {
+    "iso": "AM-LO",
+    "name_en": "Lori",
+    "name_hy": "Լոռի",
+    "name_fr": "Lorri",
+    "registered": 237467,
+    "ballots_cast": 112922,
+    "valid": 112535,
+    "invalid": 370,
+    "turnout_pct": 47.55,
+    "stations": 221,
+    "winner": "my_step",
+    "winner_pct": 69.333,
+    "runner_up": "prosperous_armenia",
+    "margin": 61.1,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "bright_armenia",
+      "republican",
+      "arf",
+      "sasna_tsrer",
+      "orinats_yerkir",
+      "we_alliance",
+      "christian_democratic_rebirth",
+      "citizens_decision",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 78024,
+        "pct": 69.333
+      },
+      "prosperous_armenia": {
+        "votes": 9260,
+        "pct": 8.229
+      },
+      "bright_armenia": {
+        "votes": 9156,
+        "pct": 8.136
+      },
+      "republican": {
+        "votes": 7960,
+        "pct": 7.073
+      },
+      "arf": {
+        "votes": 2846,
+        "pct": 2.529
+      },
+      "we_alliance": {
+        "votes": 938,
+        "pct": 0.834
+      },
+      "sasna_tsrer": {
+        "votes": 2010,
+        "pct": 1.786
+      },
+      "orinats_yerkir": {
+        "votes": 1415,
+        "pct": 1.257
+      },
+      "citizens_decision": {
+        "votes": 330,
+        "pct": 0.293
+      },
+      "christian_democratic_rebirth": {
+        "votes": 371,
+        "pct": 0.33
+      },
+      "national_progress": {
+        "votes": 225,
+        "pct": 0.2
+      }
+    }
+  },
+  "AM-SH": {
+    "iso": "AM-SH",
+    "name_en": "Shirak",
+    "name_hy": "Շիրակ",
+    "name_fr": "Chirak",
+    "registered": 229799,
+    "ballots_cast": 103697,
+    "valid": 103339,
+    "invalid": 330,
+    "turnout_pct": 45.13,
+    "stations": 220,
+    "winner": "my_step",
+    "winner_pct": 65.857,
+    "runner_up": "prosperous_armenia",
+    "margin": 55.08,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "bright_armenia",
+      "arf",
+      "republican",
+      "sasna_tsrer",
+      "we_alliance",
+      "orinats_yerkir",
+      "christian_democratic_rebirth",
+      "citizens_decision",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 68056,
+        "pct": 65.857
+      },
+      "prosperous_armenia": {
+        "votes": 11141,
+        "pct": 10.781
+      },
+      "bright_armenia": {
+        "votes": 8406,
+        "pct": 8.134
+      },
+      "republican": {
+        "votes": 3029,
+        "pct": 2.931
+      },
+      "arf": {
+        "votes": 6683,
+        "pct": 6.467
+      },
+      "we_alliance": {
+        "votes": 1852,
+        "pct": 1.792
+      },
+      "sasna_tsrer": {
+        "votes": 2157,
+        "pct": 2.087
+      },
+      "orinats_yerkir": {
+        "votes": 921,
+        "pct": 0.891
+      },
+      "citizens_decision": {
+        "votes": 313,
+        "pct": 0.303
+      },
+      "christian_democratic_rebirth": {
+        "votes": 659,
+        "pct": 0.638
+      },
+      "national_progress": {
+        "votes": 122,
+        "pct": 0.118
+      }
+    }
+  },
+  "AM-SU": {
+    "iso": "AM-SU",
+    "name_en": "Syunik",
+    "name_hy": "Սյունիք",
+    "name_fr": "Syunik",
+    "registered": 115127,
+    "ballots_cast": 66028,
+    "valid": 65821,
+    "invalid": 187,
+    "turnout_pct": 57.35,
+    "stations": 153,
+    "winner": "my_step",
+    "winner_pct": 75.029,
+    "runner_up": "prosperous_armenia",
+    "margin": 67.94,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "arf",
+      "bright_armenia",
+      "republican",
+      "we_alliance",
+      "sasna_tsrer",
+      "citizens_decision",
+      "christian_democratic_rebirth",
+      "orinats_yerkir",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 49385,
+        "pct": 75.029
+      },
+      "prosperous_armenia": {
+        "votes": 4665,
+        "pct": 7.087
+      },
+      "bright_armenia": {
+        "votes": 2824,
+        "pct": 4.29
+      },
+      "republican": {
+        "votes": 2126,
+        "pct": 3.23
+      },
+      "arf": {
+        "votes": 3208,
+        "pct": 4.874
+      },
+      "we_alliance": {
+        "votes": 1409,
+        "pct": 2.141
+      },
+      "sasna_tsrer": {
+        "votes": 804,
+        "pct": 1.221
+      },
+      "orinats_yerkir": {
+        "votes": 337,
+        "pct": 0.512
+      },
+      "citizens_decision": {
+        "votes": 450,
+        "pct": 0.684
+      },
+      "christian_democratic_rebirth": {
+        "votes": 427,
+        "pct": 0.649
+      },
+      "national_progress": {
+        "votes": 186,
+        "pct": 0.283
+      }
+    }
+  },
+  "AM-TV": {
+    "iso": "AM-TV",
+    "name_en": "Tavush",
+    "name_hy": "Տավուշ",
+    "name_fr": "Tavouch",
+    "registered": 108773,
+    "ballots_cast": 57697,
+    "valid": 57520,
+    "invalid": 149,
+    "turnout_pct": 53.04,
+    "stations": 96,
+    "winner": "my_step",
+    "winner_pct": 73.92,
+    "runner_up": "arf",
+    "margin": 66.65,
+    "order": [
+      "my_step",
+      "arf",
+      "prosperous_armenia",
+      "bright_armenia",
+      "we_alliance",
+      "republican",
+      "citizens_decision",
+      "sasna_tsrer",
+      "orinats_yerkir",
+      "national_progress",
+      "christian_democratic_rebirth"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 42519,
+        "pct": 73.92
+      },
+      "prosperous_armenia": {
+        "votes": 2691,
+        "pct": 4.678
+      },
+      "bright_armenia": {
+        "votes": 2011,
+        "pct": 3.496
+      },
+      "republican": {
+        "votes": 1368,
+        "pct": 2.378
+      },
+      "arf": {
+        "votes": 4184,
+        "pct": 7.274
+      },
+      "we_alliance": {
+        "votes": 1738,
+        "pct": 3.022
+      },
+      "sasna_tsrer": {
+        "votes": 820,
+        "pct": 1.426
+      },
+      "orinats_yerkir": {
+        "votes": 612,
+        "pct": 1.064
+      },
+      "citizens_decision": {
+        "votes": 1117,
+        "pct": 1.942
+      },
+      "christian_democratic_rebirth": {
+        "votes": 177,
+        "pct": 0.308
+      },
+      "national_progress": {
+        "votes": 283,
+        "pct": 0.492
+      }
+    }
+  },
+  "AM-VD": {
+    "iso": "AM-VD",
+    "name_en": "Vayots Dzor",
+    "name_hy": "Վայոց ձոր",
+    "name_fr": "Vayots Dzor",
+    "registered": 46640,
+    "ballots_cast": 24385,
+    "valid": 24347,
+    "invalid": 32,
+    "turnout_pct": 52.28,
+    "stations": 53,
+    "winner": "my_step",
+    "winner_pct": 66.041,
+    "runner_up": "prosperous_armenia",
+    "margin": 56.04,
+    "order": [
+      "my_step",
+      "prosperous_armenia",
+      "we_alliance",
+      "bright_armenia",
+      "arf",
+      "republican",
+      "sasna_tsrer",
+      "citizens_decision",
+      "national_progress",
+      "orinats_yerkir",
+      "christian_democratic_rebirth"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 16079,
+        "pct": 66.041
+      },
+      "prosperous_armenia": {
+        "votes": 2436,
+        "pct": 10.005
+      },
+      "bright_armenia": {
+        "votes": 1361,
+        "pct": 5.59
+      },
+      "republican": {
+        "votes": 780,
+        "pct": 3.204
+      },
+      "arf": {
+        "votes": 1032,
+        "pct": 4.239
+      },
+      "we_alliance": {
+        "votes": 1867,
+        "pct": 7.668
+      },
+      "sasna_tsrer": {
+        "votes": 247,
+        "pct": 1.014
+      },
+      "orinats_yerkir": {
+        "votes": 130,
+        "pct": 0.534
+      },
+      "citizens_decision": {
+        "votes": 182,
+        "pct": 0.748
+      },
+      "christian_democratic_rebirth": {
+        "votes": 72,
+        "pct": 0.296
+      },
+      "national_progress": {
+        "votes": 161,
+        "pct": 0.661
+      }
+    }
+  },
+  "AM-ER": {
+    "iso": "AM-ER",
+    "name_en": "Yerevan",
+    "name_hy": "Երևան",
+    "name_fr": "Erevan",
+    "registered": 849965,
+    "ballots_cast": 404678,
+    "valid": 402608,
+    "invalid": 1948,
+    "turnout_pct": 47.61,
+    "stations": 479,
+    "winner": "my_step",
+    "winner_pct": 72.139,
+    "runner_up": "bright_armenia",
+    "margin": 64.6,
+    "order": [
+      "my_step",
+      "bright_armenia",
+      "republican",
+      "prosperous_armenia",
+      "sasna_tsrer",
+      "arf",
+      "we_alliance",
+      "citizens_decision",
+      "orinats_yerkir",
+      "christian_democratic_rebirth",
+      "national_progress"
+    ],
+    "shares": {
+      "my_step": {
+        "votes": 290439,
+        "pct": 72.139
+      },
+      "prosperous_armenia": {
+        "votes": 18750,
+        "pct": 4.657
+      },
+      "bright_armenia": {
+        "votes": 30347,
+        "pct": 7.538
+      },
+      "republican": {
+        "votes": 25931,
+        "pct": 6.441
+      },
+      "arf": {
+        "votes": 8571,
+        "pct": 2.129
+      },
+      "we_alliance": {
+        "votes": 7072,
+        "pct": 1.757
+      },
+      "sasna_tsrer": {
+        "votes": 9341,
+        "pct": 2.32
+      },
+      "orinats_yerkir": {
+        "votes": 3815,
+        "pct": 0.948
+      },
+      "citizens_decision": {
+        "votes": 4081,
+        "pct": 1.014
+      },
+      "christian_democratic_rebirth": {
+        "votes": 2796,
+        "pct": 0.694
+      },
+      "national_progress": {
+        "votes": 1465,
+        "pct": 0.364
+      }
+    }
+  }
+}

@@ -1,0 +1,2680 @@
+{
+  "source": "GeoNames (CC-BY) + CEC results",
+  "located": 81,
+  "total": 81,
+  "communities": [
+    {
+      "community": "Ալագյազ",
+      "community_hy": "Ալագյազ",
+      "community_en": "Alagyaz",
+      "community_fr": "Alagyaz",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 3560,
+      "turnout_pct": 30.28,
+      "valid": 1067,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 8.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 46.6
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 38.0
+        },
+        {
+          "id": "republican",
+          "pct": 6.9
+        }
+      ],
+      "lat": 40.68082,
+      "lon": 44.28797,
+      "settlement_count": 11
+    },
+    {
+      "community": "Աշտարակ",
+      "community_hy": "Աշտարակ",
+      "community_en": "Ashtarak",
+      "community_fr": "Ashtarak",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 56618,
+      "turnout_pct": 52.42,
+      "valid": 29543,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 67.2,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 75.6
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.4
+        },
+        {
+          "id": "arf",
+          "pct": 5.1
+        }
+      ],
+      "lat": 40.2976,
+      "lon": 44.36152,
+      "settlement_count": 29
+    },
+    {
+      "community": "Ապարան",
+      "community_hy": "Ապարան",
+      "community_en": "Aparan",
+      "community_fr": "Aparan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 18820,
+      "turnout_pct": 56.88,
+      "valid": 10668,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 62.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 72.1
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.1
+        }
+      ],
+      "lat": 40.59297,
+      "lon": 44.35945,
+      "settlement_count": 22
+    },
+    {
+      "community": "Արեվուտ",
+      "community_hy": "Արեվուտ",
+      "community_en": "Arevut",
+      "community_fr": "Arevut",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 837,
+      "turnout_pct": 28.43,
+      "valid": 238,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 30.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 46.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 15.5
+        },
+        {
+          "id": "arf",
+          "pct": 14.7
+        }
+      ],
+      "lat": 40.36394,
+      "lon": 43.81025,
+      "settlement_count": 6
+    },
+    {
+      "community": "Թալին",
+      "community_hy": "Թալին",
+      "community_en": "Talin",
+      "community_fr": "Talin",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 29022,
+      "turnout_pct": 53.07,
+      "valid": 15321,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 43.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 57.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 13.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 10.6
+        }
+      ],
+      "lat": 40.39172,
+      "lon": 43.87793,
+      "settlement_count": 33
+    },
+    {
+      "community": "Ծաղկահովիտ",
+      "community_hy": "Ծաղկահովիտ",
+      "community_en": "Tsaghkahovit",
+      "community_fr": "Tsaghkahovit",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 7760,
+      "turnout_pct": 51.65,
+      "valid": 3983,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 48.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 64.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 16.0
+        },
+        {
+          "id": "arf",
+          "pct": 7.2
+        }
+      ],
+      "lat": 40.63883,
+      "lon": 44.22252,
+      "settlement_count": 10
+    },
+    {
+      "community": "Մեծաձոր",
+      "community_hy": "Մեծաձոր",
+      "community_en": "Metsadzor",
+      "community_fr": "Metsadzor",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 257,
+      "turnout_pct": 15.56,
+      "valid": 39,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 7.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 35.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 28.2
+        },
+        {
+          "id": "sasna_tsrer",
+          "pct": 17.9
+        }
+      ],
+      "lat": 40.38036,
+      "lon": 44.04591,
+      "settlement_count": 2
+    },
+    {
+      "community": "Շամիրամ",
+      "community_hy": "Շամիրամ",
+      "community_en": "Shamiram",
+      "community_fr": "Shamiram",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Aragatsotn",
+      "marz_iso": "AM-AG",
+      "registered": 812,
+      "turnout_pct": 19.83,
+      "valid": 161,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 79.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 83.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 3.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 3.7
+        }
+      ],
+      "lat": 40.27654,
+      "lon": 44.09846,
+      "settlement_count": 1
+    },
+    {
+      "community": "Արարատ",
+      "community_hy": "Արարատ",
+      "community_en": "Ararat village",
+      "community_fr": "Ararat village",
+      "same_as_marz": true,
+      "is_district": false,
+      "marz_en": "Ararat",
+      "marz_iso": "AM-AR",
+      "registered": 31285,
+      "turnout_pct": 53.44,
+      "valid": 16664,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.2,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.2
+        },
+        {
+          "id": "republican",
+          "pct": 8.5
+        }
+      ],
+      "lat": 39.83166,
+      "lon": 44.70489,
+      "settlement_count": 12
+    },
+    {
+      "community": "Արտաշատ",
+      "community_hy": "Արտաշատ",
+      "community_en": "Artashat",
+      "community_fr": "Artashat",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Ararat",
+      "marz_iso": "AM-AR",
+      "registered": 99337,
+      "turnout_pct": 48.6,
+      "valid": 48128,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 67.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 75.1
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.8
+        },
+        {
+          "id": "republican",
+          "pct": 5.3
+        }
+      ],
+      "lat": 39.95484,
+      "lon": 44.54874,
+      "settlement_count": 39
+    },
+    {
+      "community": "Մասիս",
+      "community_hy": "Մասիս",
+      "community_en": "Masis",
+      "community_fr": "Masis",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Ararat",
+      "marz_iso": "AM-AR",
+      "registered": 49681,
+      "turnout_pct": 49.47,
+      "valid": 24528,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 58.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 11.5
+        },
+        {
+          "id": "republican",
+          "pct": 6.3
+        }
+      ],
+      "lat": 40.06595,
+      "lon": 44.43669,
+      "settlement_count": 26
+    },
+    {
+      "community": "Վեդի",
+      "community_hy": "Վեդի",
+      "community_en": "Vedi",
+      "community_fr": "Vedi",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Ararat",
+      "marz_iso": "AM-AR",
+      "registered": 39536,
+      "turnout_pct": 54.98,
+      "valid": 21663,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 63.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 71.0
+        },
+        {
+          "id": "republican",
+          "pct": 7.3
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 4.7
+        }
+      ],
+      "lat": 39.91291,
+      "lon": 44.72083,
+      "settlement_count": 19
+    },
+    {
+      "community": "Վերին Դվին",
+      "community_hy": "Վերին Դվին",
+      "community_en": "Verin Dvin",
+      "community_fr": "Verin Dvin",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Ararat",
+      "marz_iso": "AM-AR",
+      "registered": 1700,
+      "turnout_pct": 45.35,
+      "valid": 736,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 78.8,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 83.0
+        },
+        {
+          "id": "republican",
+          "pct": 4.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 4.1
+        }
+      ],
+      "lat": 40.02393,
+      "lon": 44.5924,
+      "settlement_count": 1
+    },
+    {
+      "community": "Արաքս",
+      "community_hy": "Արաքս",
+      "community_en": "Araks",
+      "community_fr": "Araks",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 28652,
+      "turnout_pct": 46.05,
+      "valid": 13150,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 54.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 66.5
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 12.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.6
+        }
+      ],
+      "lat": 40.05548,
+      "lon": 44.30292,
+      "settlement_count": 13
+    },
+    {
+      "community": "Արմավիր",
+      "community_hy": "Արմավիր",
+      "community_en": "Armavir",
+      "community_fr": "Armavir",
+      "same_as_marz": true,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 52562,
+      "turnout_pct": 43.73,
+      "valid": 22915,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 45.8,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 62.8
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 17.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 10.8
+        }
+      ],
+      "lat": 40.15553,
+      "lon": 44.0388,
+      "settlement_count": 13
+    },
+    {
+      "community": "Բաղրամյան",
+      "community_hy": "Բաղրամյան",
+      "community_en": "Baghramyan",
+      "community_fr": "Baghramyan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 15803,
+      "turnout_pct": 48.06,
+      "valid": 7571,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 54.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 67.5
+        },
+        {
+          "id": "arf",
+          "pct": 12.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.0
+        }
+      ],
+      "lat": 40.19608,
+      "lon": 43.85409,
+      "settlement_count": 15
+    },
+    {
+      "community": "Մեծամոր",
+      "community_hy": "Մեծամոր",
+      "community_en": "Metsamor",
+      "community_fr": "Metsamor",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 48128,
+      "turnout_pct": 44.96,
+      "valid": 21573,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 46.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 62.8
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 16.1
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 8.7
+        }
+      ],
+      "lat": 40.14459,
+      "lon": 44.11484,
+      "settlement_count": 30
+    },
+    {
+      "community": "Վաղարշապատ",
+      "community_hy": "Վաղարշապատ",
+      "community_en": "Vagharshapat",
+      "community_fr": "Vagharshapat",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 70499,
+      "turnout_pct": 42.12,
+      "valid": 29586,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 62.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.1
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.2
+        }
+      ],
+      "lat": 40.16557,
+      "lon": 44.29462,
+      "settlement_count": 18
+    },
+    {
+      "community": "Փարաքար",
+      "community_hy": "Փարաքար",
+      "community_en": "Parakar",
+      "community_fr": "Parakar",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 18358,
+      "turnout_pct": 47.31,
+      "valid": 8654,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 72.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 78.5
+        },
+        {
+          "id": "we_alliance",
+          "pct": 6.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 4.1
+        }
+      ],
+      "lat": 40.16388,
+      "lon": 44.4057,
+      "settlement_count": 7
+    },
+    {
+      "community": "Ֆերիկ",
+      "community_hy": "Ֆերիկ",
+      "community_en": "Ferik",
+      "community_fr": "Ferik",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Armavir",
+      "marz_iso": "AM-AV",
+      "registered": 351,
+      "turnout_pct": 34.47,
+      "valid": 121,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 65.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 78.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 13.2
+        },
+        {
+          "id": "republican",
+          "pct": 3.3
+        }
+      ],
+      "lat": 40.1874,
+      "lon": 44.20952,
+      "settlement_count": 1
+    },
+    {
+      "community": "Գավառ",
+      "community_hy": "Գավառ",
+      "community_en": "Gavar",
+      "community_fr": "Gavar",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Gegharkunik",
+      "marz_iso": "AM-GR",
+      "registered": 48277,
+      "turnout_pct": 45.17,
+      "valid": 21750,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 65.8,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 75.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.4
+        },
+        {
+          "id": "arf",
+          "pct": 5.3
+        }
+      ],
+      "lat": 40.35398,
+      "lon": 45.12386,
+      "settlement_count": 12
+    },
+    {
+      "community": "Ճամբարակ",
+      "community_hy": "Ճամբարակ",
+      "community_en": "Chambarak",
+      "community_fr": "Chambarak",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Gegharkunik",
+      "marz_iso": "AM-GR",
+      "registered": 11497,
+      "turnout_pct": 58.7,
+      "valid": 6727,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 74.8,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 80.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 5.7
+        },
+        {
+          "id": "arf",
+          "pct": 5.6
+        }
+      ],
+      "lat": 40.59655,
+      "lon": 45.35498,
+      "settlement_count": 16
+    },
+    {
+      "community": "Մարտունի",
+      "community_hy": "Մարտունի",
+      "community_en": "Martuni",
+      "community_fr": "Martuni",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Gegharkunik",
+      "marz_iso": "AM-GR",
+      "registered": 65281,
+      "turnout_pct": 49.75,
+      "valid": 32397,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 62.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.3
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 6.4
+        }
+      ],
+      "lat": 40.14028,
+      "lon": 45.30232,
+      "settlement_count": 17
+    },
+    {
+      "community": "Սեվան",
+      "community_hy": "Սեվան",
+      "community_en": "Sevan",
+      "community_fr": "Sevan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Gegharkunik",
+      "marz_iso": "AM-GR",
+      "registered": 33513,
+      "turnout_pct": 52.42,
+      "valid": 17482,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 56.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.5
+        },
+        {
+          "id": "arf",
+          "pct": 12.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.6
+        }
+      ],
+      "lat": 40.548,
+      "lon": 44.95314,
+      "settlement_count": 11
+    },
+    {
+      "community": "Վարդենիս",
+      "community_hy": "Վարդենիս",
+      "community_en": "Vardenis",
+      "community_fr": "Vardenis",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Gegharkunik",
+      "marz_iso": "AM-GR",
+      "registered": 32593,
+      "turnout_pct": 54.7,
+      "valid": 17791,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 53.1,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 64.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 11.2
+        },
+        {
+          "id": "arf",
+          "pct": 7.7
+        }
+      ],
+      "lat": 40.1827,
+      "lon": 45.73156,
+      "settlement_count": 35
+    },
+    {
+      "community": "Աբովյան",
+      "community_hy": "Աբովյան",
+      "community_en": "Abovyan",
+      "community_fr": "Abovyan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 64951,
+      "turnout_pct": 46.43,
+      "valid": 30032,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 37.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 62.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 24.6
+        },
+        {
+          "id": "republican",
+          "pct": 2.9
+        }
+      ],
+      "lat": 40.2717,
+      "lon": 44.63342,
+      "settlement_count": 11
+    },
+    {
+      "community": "Ակունք",
+      "community_hy": "Ակունք",
+      "community_en": "Akunk",
+      "community_fr": "Akunk",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 7102,
+      "turnout_pct": 54.31,
+      "valid": 3850,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 28.1,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 58.8
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 30.7
+        },
+        {
+          "id": "arf",
+          "pct": 2.8
+        }
+      ],
+      "lat": 40.26672,
+      "lon": 44.6861,
+      "settlement_count": 8
+    },
+    {
+      "community": "Արզնի",
+      "community_hy": "Արզնի",
+      "community_en": "Arzni",
+      "community_fr": "Arzni",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 2236,
+      "turnout_pct": 35.64,
+      "valid": 794,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 47.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 65.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 17.8
+        },
+        {
+          "id": "arf",
+          "pct": 4.9
+        }
+      ],
+      "lat": 40.29636,
+      "lon": 44.5958,
+      "settlement_count": 1
+    },
+    {
+      "community": "Բյուրեղավան",
+      "community_hy": "Բյուրեղավան",
+      "community_en": "Byureghavan",
+      "community_fr": "Byureghavan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 8889,
+      "turnout_pct": 47.02,
+      "valid": 4147,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 73.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 12.4
+        },
+        {
+          "id": "arf",
+          "pct": 4.9
+        }
+      ],
+      "lat": 40.31335,
+      "lon": 44.59685,
+      "settlement_count": 3
+    },
+    {
+      "community": "Գառնի",
+      "community_hy": "Գառնի",
+      "community_en": "Garni",
+      "community_fr": "Garni",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 9597,
+      "turnout_pct": 53.17,
+      "valid": 5087,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 51.9,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 68.6
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 16.7
+        },
+        {
+          "id": "arf",
+          "pct": 6.6
+        }
+      ],
+      "lat": 40.11931,
+      "lon": 44.73442,
+      "settlement_count": 6
+    },
+    {
+      "community": "Ծաղկաձոր",
+      "community_hy": "Ծաղկաձոր",
+      "community_en": "Tsaghkadzor",
+      "community_fr": "Tsaghkadzor",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 5518,
+      "turnout_pct": 54.31,
+      "valid": 2986,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 35.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 58.1
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 22.4
+        },
+        {
+          "id": "arf",
+          "pct": 11.8
+        }
+      ],
+      "lat": 40.54309,
+      "lon": 44.7279,
+      "settlement_count": 6
+    },
+    {
+      "community": "Հրազդան",
+      "community_hy": "Հրազդան",
+      "community_en": "Hrazdan",
+      "community_fr": "Hrazdan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 50734,
+      "turnout_pct": 46.78,
+      "valid": 23631,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 57.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 12.0
+        },
+        {
+          "id": "arf",
+          "pct": 6.1
+        }
+      ],
+      "lat": 40.5169,
+      "lon": 44.75591,
+      "settlement_count": 5
+    },
+    {
+      "community": "Նաիրի",
+      "community_hy": "Նաիրի",
+      "community_en": "Nairi",
+      "community_fr": "Nairi",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 29231,
+      "turnout_pct": 53.68,
+      "valid": 15671,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.0,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 72.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 11.5
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 4.4
+        }
+      ],
+      "lat": 40.3217,
+      "lon": 44.4814,
+      "settlement_count": 9
+    },
+    {
+      "community": "Նոր Հաճըն",
+      "community_hy": "Նոր Հաճըն",
+      "community_en": "Nor Hachn",
+      "community_fr": "Nor Hachn",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 23805,
+      "turnout_pct": 53.08,
+      "valid": 12571,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 55.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.0
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 14.5
+        },
+        {
+          "id": "arf",
+          "pct": 3.8
+        }
+      ],
+      "lat": 40.30296,
+      "lon": 44.58314,
+      "settlement_count": 9
+    },
+    {
+      "community": "Չարենցավան",
+      "community_hy": "Չարենցավան",
+      "community_en": "Charentsavan",
+      "community_fr": "Charentsavan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 29832,
+      "turnout_pct": 48.1,
+      "valid": 14324,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 56.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 68.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 12.0
+        },
+        {
+          "id": "republican",
+          "pct": 7.2
+        }
+      ],
+      "lat": 40.40289,
+      "lon": 44.64447,
+      "settlement_count": 6
+    },
+    {
+      "community": "Ջրվեժ",
+      "community_hy": "Ջրվեժ",
+      "community_en": "Jrvezh",
+      "community_fr": "Jrvezh",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Kotayk",
+      "marz_iso": "AM-KT",
+      "registered": 8231,
+      "turnout_pct": 48.12,
+      "valid": 3957,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 68.2,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 77.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 3.9
+        }
+      ],
+      "lat": 40.18889,
+      "lon": 44.62414,
+      "settlement_count": 3
+    },
+    {
+      "community": "Ալավերդի",
+      "community_hy": "Ալավերդի",
+      "community_en": "Alaverdi",
+      "community_fr": "Alaverdi",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 34012,
+      "turnout_pct": 50.43,
+      "valid": 17123,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 56.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 68.2
+        },
+        {
+          "id": "republican",
+          "pct": 11.6
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.0
+        }
+      ],
+      "lat": 41.09766,
+      "lon": 44.67316,
+      "settlement_count": 22
+    },
+    {
+      "community": "Գյուլագարակ",
+      "community_hy": "Գյուլագարակ",
+      "community_en": "Gyulagarak",
+      "community_fr": "Gyulagarak",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 6794,
+      "turnout_pct": 54.49,
+      "valid": 3702,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 60.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.8
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.5
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 6.1
+        }
+      ],
+      "lat": 40.96528,
+      "lon": 44.47128,
+      "settlement_count": 7
+    },
+    {
+      "community": "Թումանյան",
+      "community_hy": "Թումանյան",
+      "community_en": "Dsegh",
+      "community_fr": "Dsegh",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 5504,
+      "turnout_pct": 55.65,
+      "valid": 3044,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 55.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 64.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.4
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 8.9
+        }
+      ],
+      "lat": 40.9617,
+      "lon": 44.65003,
+      "settlement_count": 9
+    },
+    {
+      "community": "Լերմոնտովո",
+      "community_hy": "Լերմոնտովո",
+      "community_en": "Lermontovo",
+      "community_fr": "Lermontovo",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 719,
+      "turnout_pct": 27.4,
+      "valid": 197,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 37.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 58.9
+        },
+        {
+          "id": "republican",
+          "pct": 21.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.1
+        }
+      ],
+      "lat": 40.75843,
+      "lon": 44.63401,
+      "settlement_count": 2
+    },
+    {
+      "community": "Լոռի Բերդ",
+      "community_hy": "Լոռի Բերդ",
+      "community_en": "Lori Berd",
+      "community_fr": "Lori Berd",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 4354,
+      "turnout_pct": 54.25,
+      "valid": 2349,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 69.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 76.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 6.9
+        },
+        {
+          "id": "arf",
+          "pct": 4.3
+        }
+      ],
+      "lat": 41.01355,
+      "lon": 44.41342,
+      "settlement_count": 9
+    },
+    {
+      "community": "Սպիտակ",
+      "community_hy": "Սպիտակ",
+      "community_en": "Spitak",
+      "community_fr": "Spitak",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 33425,
+      "turnout_pct": 49.92,
+      "valid": 16642,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 54.0,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 66.0
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 12.0
+        },
+        {
+          "id": "republican",
+          "pct": 5.5
+        }
+      ],
+      "lat": 40.83131,
+      "lon": 44.27019,
+      "settlement_count": 21
+    },
+    {
+      "community": "Ստեփանավան",
+      "community_hy": "Ստեփանավան",
+      "community_en": "Stepanavan",
+      "community_fr": "Stepanavan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 15029,
+      "turnout_pct": 44.34,
+      "valid": 6637,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 66.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 72.8
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 6.2
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 5.4
+        }
+      ],
+      "lat": 41.00995,
+      "lon": 44.38531,
+      "settlement_count": 3
+    },
+    {
+      "community": "Վանաձոր",
+      "community_hy": "Վանաձոր",
+      "community_en": "Vanadzor",
+      "community_fr": "Vanadzor",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 104215,
+      "turnout_pct": 46.48,
+      "valid": 48299,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 59.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 9.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.9
+        }
+      ],
+      "lat": 40.8074,
+      "lon": 44.49704,
+      "settlement_count": 4
+    },
+    {
+      "community": "Տաշիր",
+      "community_hy": "Տաշիր",
+      "community_en": "Tashir",
+      "community_fr": "Tashir",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 22103,
+      "turnout_pct": 41.51,
+      "valid": 9079,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 63.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 76.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 12.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 4.1
+        }
+      ],
+      "lat": 41.11922,
+      "lon": 44.28649,
+      "settlement_count": 20
+    },
+    {
+      "community": "Փամբակ",
+      "community_hy": "Փամբակ",
+      "community_en": "Pambak",
+      "community_fr": "Pambak",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 10416,
+      "turnout_pct": 51.54,
+      "valid": 5352,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.8
+        }
+      ],
+      "lat": 40.83086,
+      "lon": 44.55725,
+      "settlement_count": 15
+    },
+    {
+      "community": "Ֆիոլետովո",
+      "community_hy": "Ֆիոլետովո",
+      "community_en": "Fioletovo",
+      "community_fr": "Fioletovo",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Lori",
+      "marz_iso": "AM-LO",
+      "registered": 896,
+      "turnout_pct": 12.39,
+      "valid": 111,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 18.0,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 45.0
+        },
+        {
+          "id": "republican",
+          "pct": 27.0
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 13.5
+        }
+      ],
+      "lat": 40.72365,
+      "lon": 44.71664,
+      "settlement_count": 1
+    },
+    {
+      "community": "Ախուրյան",
+      "community_hy": "Ախուրյան",
+      "community_en": "Akhuryan",
+      "community_fr": "Akhuryan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Shirak",
+      "marz_iso": "AM-SH",
+      "registered": 34208,
+      "turnout_pct": 49.22,
+      "valid": 16767,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 50.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 61.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 11.4
+        },
+        {
+          "id": "arf",
+          "pct": 11.1
+        }
+      ],
+      "lat": 40.78081,
+      "lon": 43.90037,
+      "settlement_count": 33
+    },
+    {
+      "community": "Ամասիա",
+      "community_hy": "Ամասիա",
+      "community_en": "Amasia",
+      "community_fr": "Amasia",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Shirak",
+      "marz_iso": "AM-SH",
+      "registered": 5835,
+      "turnout_pct": 46.84,
+      "valid": 2729,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 43.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 56.1
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 12.6
+        },
+        {
+          "id": "arf",
+          "pct": 9.6
+        }
+      ],
+      "lat": 40.95566,
+      "lon": 43.78379,
+      "settlement_count": 18
+    },
+    {
+      "community": "Անի",
+      "community_hy": "Անի",
+      "community_en": "Ani",
+      "community_fr": "Ani",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Shirak",
+      "marz_iso": "AM-SH",
+      "registered": 17264,
+      "turnout_pct": 52.7,
+      "valid": 9080,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 64.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 74.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 10.1
+        },
+        {
+          "id": "arf",
+          "pct": 5.7
+        }
+      ],
+      "lat": 40.5722,
+      "lon": 43.8669,
+      "settlement_count": 17
+    },
+    {
+      "community": "Աշոցք",
+      "community_hy": "Աշոցք",
+      "community_en": "Ashotsk",
+      "community_fr": "Ashotsk",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Shirak",
+      "marz_iso": "AM-SH",
+      "registered": 8533,
+      "turnout_pct": 56.44,
+      "valid": 4799,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 27.0,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 45.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 18.0
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 15.7
+        }
+      ],
+      "lat": 41.0377,
+      "lon": 43.85843,
+      "settlement_count": 26
+    },
+    {
+      "community": "Արթիկ",
+      "community_hy": "Արթիկ",
+      "community_en": "Art'ik",
+      "community_fr": "Art'ik",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Shirak",
+      "marz_iso": "AM-SH",
+      "registered": 39498,
+      "turnout_pct": 54.17,
+      "valid": 21343,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.8
+        },
+        {
+          "id": "arf",
+          "pct": 6.9
+        }
+      ],
+      "lat": 40.6222,
+      "lon": 43.96982,
+      "settlement_count": 24
+    },
+    {
+      "community": "Գյումրի",
+      "community_hy": "Գյումրի",
+      "community_en": "Gyumri",
+      "community_fr": "Gyumri",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Shirak",
+      "marz_iso": "AM-SH",
+      "registered": 124461,
+      "turnout_pct": 39.22,
+      "valid": 48621,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 54.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 66.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 12.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 8.2
+        }
+      ],
+      "lat": 40.79305,
+      "lon": 43.84635,
+      "settlement_count": 1
+    },
+    {
+      "community": "Գորիս",
+      "community_hy": "Գորիս",
+      "community_en": "Goris",
+      "community_fr": "Goris",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 23261,
+      "turnout_pct": 56.32,
+      "valid": 13071,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 70.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 76.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 6.1
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 5.7
+        }
+      ],
+      "lat": 39.51111,
+      "lon": 46.34168,
+      "settlement_count": 10
+    },
+    {
+      "community": "Կապան",
+      "community_hy": "Կապան",
+      "community_en": "Kapan",
+      "community_fr": "Kapan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 38972,
+      "turnout_pct": 57.24,
+      "valid": 22235,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 67.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 74.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.0
+        },
+        {
+          "id": "arf",
+          "pct": 6.9
+        }
+      ],
+      "lat": 39.20762,
+      "lon": 46.40678,
+      "settlement_count": 32
+    },
+    {
+      "community": "Մեղրի",
+      "community_hy": "Մեղրի",
+      "community_en": "Meghri",
+      "community_fr": "Meghri",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 9476,
+      "turnout_pct": 63.11,
+      "valid": 5971,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 66.1,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 75.4
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 9.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.4
+        }
+      ],
+      "lat": 38.90123,
+      "lon": 46.24308,
+      "settlement_count": 13
+    },
+    {
+      "community": "Սիսիան",
+      "community_hy": "Սիսիան",
+      "community_en": "Sisian",
+      "community_fr": "Sisian",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 24930,
+      "turnout_pct": 49.36,
+      "valid": 12278,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 71.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 9.9
+        },
+        {
+          "id": "arf",
+          "pct": 6.3
+        }
+      ],
+      "lat": 39.52191,
+      "lon": 46.02696,
+      "settlement_count": 34
+    },
+    {
+      "community": "Տաթև",
+      "community_hy": "Տաթև",
+      "community_en": "Tatev",
+      "community_fr": "Tatev",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 4461,
+      "turnout_pct": 53.98,
+      "valid": 2383,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 65.9,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 73.8
+        },
+        {
+          "id": "arf",
+          "pct": 7.9
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.7
+        }
+      ],
+      "lat": 39.38611,
+      "lon": 46.24451,
+      "settlement_count": 8
+    },
+    {
+      "community": "Տեղ",
+      "community_hy": "Տեղ",
+      "community_en": "Tegh",
+      "community_fr": "Tegh",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 7674,
+      "turnout_pct": 70.59,
+      "valid": 5380,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 67.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 74.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.2
+        },
+        {
+          "id": "republican",
+          "pct": 7.0
+        }
+      ],
+      "lat": 39.55826,
+      "lon": 46.48054,
+      "settlement_count": 7
+    },
+    {
+      "community": "Քաջարան",
+      "community_hy": "Քաջարան",
+      "community_en": "Kajaran",
+      "community_fr": "Kajaran",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Syunik",
+      "marz_iso": "AM-SU",
+      "registered": 6353,
+      "turnout_pct": 70.96,
+      "valid": 4503,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 74.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 82.8
+        },
+        {
+          "id": "we_alliance",
+          "pct": 8.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 2.1
+        }
+      ],
+      "lat": 39.15091,
+      "lon": 46.15673,
+      "settlement_count": 5
+    },
+    {
+      "community": "Բերդ",
+      "community_hy": "Բերդ",
+      "community_en": "Berd",
+      "community_fr": "Berd",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Tavush",
+      "marz_iso": "AM-TV",
+      "registered": 25936,
+      "turnout_pct": 48.69,
+      "valid": 12584,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 67.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 75.2
+        },
+        {
+          "id": "arf",
+          "pct": 7.8
+        },
+        {
+          "id": "sasna_tsrer",
+          "pct": 4.4
+        }
+      ],
+      "lat": 40.88066,
+      "lon": 45.38901,
+      "settlement_count": 17
+    },
+    {
+      "community": "Դիլիջան",
+      "community_hy": "Դիլիջան",
+      "community_en": "Dilijan",
+      "community_fr": "Dilijan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Tavush",
+      "marz_iso": "AM-TV",
+      "registered": 20774,
+      "turnout_pct": 49.23,
+      "valid": 10201,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 71.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 78.0
+        },
+        {
+          "id": "arf",
+          "pct": 6.7
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 5.7
+        }
+      ],
+      "lat": 40.74037,
+      "lon": 44.86344,
+      "settlement_count": 7
+    },
+    {
+      "community": "Իջեվան",
+      "community_hy": "Իջեվան",
+      "community_en": "Ijevan",
+      "community_fr": "Ijevan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Tavush",
+      "marz_iso": "AM-TV",
+      "registered": 35550,
+      "turnout_pct": 58.1,
+      "valid": 20602,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 62.3,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 71.8
+        },
+        {
+          "id": "arf",
+          "pct": 9.5
+        },
+        {
+          "id": "we_alliance",
+          "pct": 5.5
+        }
+      ],
+      "lat": 40.88037,
+      "lon": 45.14776,
+      "settlement_count": 19
+    },
+    {
+      "community": "Նոյեմբերյան",
+      "community_hy": "Նոյեմբերյան",
+      "community_en": "Noyemberyan",
+      "community_fr": "Noyemberyan",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Tavush",
+      "marz_iso": "AM-TV",
+      "registered": 26513,
+      "turnout_pct": 53.52,
+      "valid": 14133,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 65.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 72.9
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 5.0
+        }
+      ],
+      "lat": 41.17319,
+      "lon": 44.99851,
+      "settlement_count": 19
+    },
+    {
+      "community": "Արենի",
+      "community_hy": "Արենի",
+      "community_en": "Areni",
+      "community_fr": "Areni",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Vayots Dzor",
+      "marz_iso": "AM-VD",
+      "registered": 8821,
+      "turnout_pct": 56.6,
+      "valid": 4991,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 55.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 67.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 12.1
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.5
+        }
+      ],
+      "lat": 39.72205,
+      "lon": 45.18392,
+      "settlement_count": 9
+    },
+    {
+      "community": "Եղեգիս",
+      "community_hy": "Եղեգիս",
+      "community_en": "Artabuynk",
+      "community_fr": "Artabuynk",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Vayots Dzor",
+      "marz_iso": "AM-VD",
+      "registered": 4991,
+      "turnout_pct": 53.88,
+      "valid": 2684,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 49.9,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 65.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 15.5
+        },
+        {
+          "id": "we_alliance",
+          "pct": 4.9
+        }
+      ],
+      "lat": 39.8667,
+      "lon": 45.32788,
+      "settlement_count": 12
+    },
+    {
+      "community": "Եղեգնաձոր",
+      "community_hy": "Եղեգնաձոր",
+      "community_en": "Yeghegnadzor",
+      "community_fr": "Yeghegnadzor",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Vayots Dzor",
+      "marz_iso": "AM-VD",
+      "registered": 16094,
+      "turnout_pct": 48.42,
+      "valid": 7776,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 56.4,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 68.1
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 11.7
+        },
+        {
+          "id": "we_alliance",
+          "pct": 7.2
+        }
+      ],
+      "lat": 39.7644,
+      "lon": 45.33268,
+      "settlement_count": 5
+    },
+    {
+      "community": "Ջերմուկ",
+      "community_hy": "Ջերմուկ",
+      "community_en": "Jermuk",
+      "community_fr": "Jermuk",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Vayots Dzor",
+      "marz_iso": "AM-VD",
+      "registered": 7155,
+      "turnout_pct": 48.71,
+      "valid": 3482,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 58.2,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 65.8
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 7.6
+        },
+        {
+          "id": "we_alliance",
+          "pct": 7.0
+        }
+      ],
+      "lat": 39.83948,
+      "lon": 45.67112,
+      "settlement_count": 4
+    },
+    {
+      "community": "Վայք",
+      "community_hy": "Վայք",
+      "community_en": "Vayk",
+      "community_fr": "Vayk",
+      "same_as_marz": false,
+      "is_district": false,
+      "marz_en": "Vayots Dzor",
+      "marz_iso": "AM-VD",
+      "registered": 9579,
+      "turnout_pct": 56.63,
+      "valid": 5414,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 47.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 62.0
+        },
+        {
+          "id": "we_alliance",
+          "pct": 14.3
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.7
+        }
+      ],
+      "lat": 39.69026,
+      "lon": 45.46919,
+      "settlement_count": 14
+    },
+    {
+      "community": "Աջափնյակ",
+      "community_hy": "Աջափնյակ",
+      "community_en": "Ajapnyak",
+      "community_fr": "Ajapnyak",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 85412,
+      "turnout_pct": 49.75,
+      "valid": 42238,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 63.2,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.9
+        },
+        {
+          "id": "republican",
+          "pct": 7.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.1
+        }
+      ],
+      "lat": 40.19917,
+      "lon": 44.47056,
+      "settlement_count": 1
+    },
+    {
+      "community": "Ավան",
+      "community_hy": "Ավան",
+      "community_en": "Avan",
+      "community_fr": "Avan",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 40286,
+      "turnout_pct": 50.56,
+      "valid": 20291,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 59.1,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.1
+        },
+        {
+          "id": "republican",
+          "pct": 10.0
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.3
+        }
+      ],
+      "lat": 40.21436,
+      "lon": 44.57846,
+      "settlement_count": 1
+    },
+    {
+      "community": "Արաբկիր",
+      "community_hy": "Արաբկիր",
+      "community_en": "Arabkir",
+      "community_fr": "Arabkir",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 95418,
+      "turnout_pct": 48.08,
+      "valid": 45586,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 60.5,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 69.2
+        },
+        {
+          "id": "republican",
+          "pct": 8.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.3
+        }
+      ],
+      "lat": 40.20549,
+      "lon": 44.50699,
+      "settlement_count": 1
+    },
+    {
+      "community": "Դավթաշեն",
+      "community_hy": "Դավթաշեն",
+      "community_en": "Davtashen",
+      "community_fr": "Davtashen",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 32774,
+      "turnout_pct": 51.74,
+      "valid": 16918,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 63.9,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 71.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.8
+        },
+        {
+          "id": "republican",
+          "pct": 6.9
+        }
+      ],
+      "lat": 40.21642,
+      "lon": 44.48088,
+      "settlement_count": 1
+    },
+    {
+      "community": "Էրեբունի",
+      "community_hy": "Էրեբունի",
+      "community_en": "Erebuni",
+      "community_fr": "Erebouni",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 94551,
+      "turnout_pct": 44.79,
+      "valid": 42108,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 71.8,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 77.7
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 5.9
+        },
+        {
+          "id": "republican",
+          "pct": 4.7
+        }
+      ],
+      "lat": 40.17765,
+      "lon": 44.5126,
+      "settlement_count": 1
+    },
+    {
+      "community": "Կենտրոն",
+      "community_hy": "Կենտրոն",
+      "community_en": "Kentron",
+      "community_fr": "Kentron",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 95758,
+      "turnout_pct": 47.5,
+      "valid": 45280,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 54.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 64.3
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 9.7
+        },
+        {
+          "id": "republican",
+          "pct": 8.3
+        }
+      ],
+      "lat": 40.17806,
+      "lon": 44.51303,
+      "settlement_count": 1
+    },
+    {
+      "community": "Մալաթիա-Սեբաստիա",
+      "community_hy": "Մալաթիա-Սեբաստիա",
+      "community_en": "Malatia-Sebastia",
+      "community_fr": "Malatia-Sebastia",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 109143,
+      "turnout_pct": 45.84,
+      "valid": 49812,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 69.0,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 76.9
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.9
+        },
+        {
+          "id": "republican",
+          "pct": 4.2
+        }
+      ],
+      "lat": 40.17396,
+      "lon": 44.4457,
+      "settlement_count": 1
+    },
+    {
+      "community": "Նոր Նորք",
+      "community_hy": "Նոր Նորք",
+      "community_en": "Nor Nork",
+      "community_fr": "Nor Nork",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 101382,
+      "turnout_pct": 48.19,
+      "valid": 48662,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 61.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.4
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 8.7
+        },
+        {
+          "id": "republican",
+          "pct": 6.5
+        }
+      ],
+      "lat": 40.19661,
+      "lon": 44.5669,
+      "settlement_count": 1
+    },
+    {
+      "community": "Նորք-Մարաշ",
+      "community_hy": "Նորք-Մարաշ",
+      "community_en": "Nork-Marash",
+      "community_fr": "Nork-Marash",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 10872,
+      "turnout_pct": 47.88,
+      "valid": 5196,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 72.7,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 78.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 5.8
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 5.0
+        }
+      ],
+      "lat": 40.17417,
+      "lon": 44.54083,
+      "settlement_count": 1
+    },
+    {
+      "community": "Նուբարաշեն",
+      "community_hy": "Նուբարաշեն",
+      "community_en": "Nubarashen",
+      "community_fr": "Nubarashen",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 9067,
+      "turnout_pct": 48.12,
+      "valid": 4339,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 56.6,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 68.5
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 11.9
+        },
+        {
+          "id": "republican",
+          "pct": 7.3
+        }
+      ],
+      "lat": 40.1296,
+      "lon": 44.5406,
+      "settlement_count": 1
+    },
+    {
+      "community": "Շենգավիթ",
+      "community_hy": "Շենգավիթ",
+      "community_en": "Shengavit",
+      "community_fr": "Shengavit",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 116039,
+      "turnout_pct": 47.03,
+      "valid": 54169,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 69.9,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 76.8
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 6.9
+        },
+        {
+          "id": "republican",
+          "pct": 4.5
+        }
+      ],
+      "lat": 40.1557,
+      "lon": 44.4779,
+      "settlement_count": 1
+    },
+    {
+      "community": "Քանաքեռ-Զեյթուն",
+      "community_hy": "Քանաքեռ-Զեյթուն",
+      "community_en": "Kanaker-Zeytun",
+      "community_fr": "Kanaker-Zeytun",
+      "same_as_marz": false,
+      "is_district": true,
+      "marz_en": "Yerevan",
+      "marz_iso": "AM-ER",
+      "registered": 59263,
+      "turnout_pct": 47.45,
+      "valid": 28009,
+      "winner": "my_step",
+      "winner_color": "#F58220",
+      "margin": 62.2,
+      "top": [
+        {
+          "id": "my_step",
+          "pct": 70.4
+        },
+        {
+          "id": "prosperous_armenia",
+          "pct": 8.2
+        },
+        {
+          "id": "bright_armenia",
+          "pct": 7.2
+        }
+      ],
+      "lat": 40.22,
+      "lon": 44.53833,
+      "settlement_count": 1
+    }
+  ]
+}
