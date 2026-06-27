@@ -20,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Re-aggregated to the modern consolidated communities (`consolidate_from: 2026`).
   - 100 % geocoding: 81/81 communities and 925/925 settlements located, with
     trilingual party profiles and Wikipedia/Wikidata cross-references.
+  - A trilingual preamble note (shown only for 2012) explains the mixed system and
+    what the atlas maps, driven by a new optional `note` field in `elections.json`.
 
 ### Changed
 

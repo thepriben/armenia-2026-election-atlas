@@ -172,6 +172,14 @@ function applyDynamicCopy() {
       .replace("{total}", n.total_seats)
       .replace("{sweep}", allWon ? t("sweep_clause") : "");
   }
+  // Per-election preamble note (e.g. the 2012 mixed electoral system). Trilingual,
+  // taken from elections.json; shown only for elections that define one.
+  const noteEl = $("#heroNote");
+  if (noteEl) {
+    const note = e && e.note && (e.note[lang] || e.note.en);
+    noteEl.textContent = note || "";
+    noteEl.hidden = !note;
+  }
   // Overseas electronic vote: dates and turnout differ per election; show the
   // note only when we have figures for the selected one, otherwise hide it.
   const overseasSection = document.getElementById("overseas");
